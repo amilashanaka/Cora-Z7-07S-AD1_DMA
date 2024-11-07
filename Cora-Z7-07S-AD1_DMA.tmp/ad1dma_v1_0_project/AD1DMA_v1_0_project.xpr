@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="67" Path="c:/projects/ern24004/projects/cora-z7-07s-ad1_dma/cora-z7-07s-ad1_dma.tmp/ad1dma_v1_0_project/AD1DMA_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="08a28816d0734beeb13ae791dc5cf278"/>
+    <Option Name="Id" Val="3a5ec111e98442deba4b62813a69d5a7"/>
     <Option Name="Part" Val="xc7z007sclg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -135,6 +135,14 @@
       </File>
       <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/component.xml">
         <FileInfo SFType="IPXACT"/>
+      </File>
+      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/src/adc_master_lite_v1_0_M_AXI.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>

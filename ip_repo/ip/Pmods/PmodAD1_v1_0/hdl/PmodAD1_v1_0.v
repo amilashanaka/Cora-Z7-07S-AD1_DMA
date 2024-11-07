@@ -106,6 +106,13 @@
 		output wire  m_axi_rready
 
 	);
+	
+	// DMA controller 
+	wire [11:0] sample_data;
+    wire data_valid;
+    wire [31:0] packed_data;
+    wire ready_for_data;
+    
 	wire ad1_cs;
 	wire ad1_sdin0;
 	wire ad1_sdin1;

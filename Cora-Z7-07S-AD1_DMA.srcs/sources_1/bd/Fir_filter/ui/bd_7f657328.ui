@@ -1,8 +1,24 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"4.92795",
-   "Default View_TopLeft":"3867,302",
+   "Default View_Layers":"/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/rst_ps7_0_50M_peripheral_aresetn:true|",
+   "Default View_Layout":"",
+   "Default View_ScaleFactor":"0.268127",
+   "Default View_TopLeft":"0,-574",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeReset":"true",
    "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ScaleFactor":"0.60835",
+   "Grouping and No Loops_TopLeft":"0,-35",
+   "Interfaces View_Layers":"/processing_system7_0_FCLK_RESET0_N:false|/processing_system7_0_FCLK_CLK0:false|/rst_ps7_0_50M_peripheral_aresetn:false|",
+   "Interfaces View_ScaleFactor":"0.829831",
+   "Interfaces View_TopLeft":"30,-54",
+   "No Loops_Layers":"",
+   "No Loops_Layout":"",
+   "No Loops_ScaleFactor":"0.523759",
+   "No Loops_TopLeft":"-166,4",
+   "Reduced Jogs_Layers":"/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/rst_ps7_0_50M_peripheral_aresetn:true|",
+   "Reduced Jogs_ScaleFactor":"0.460539",
+   "Reduced Jogs_TopLeft":"-287,2",
    "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
 preplace port DDR -pg 1 -lvl 6 -x 4450 -y 60 -defaultsOSRD
