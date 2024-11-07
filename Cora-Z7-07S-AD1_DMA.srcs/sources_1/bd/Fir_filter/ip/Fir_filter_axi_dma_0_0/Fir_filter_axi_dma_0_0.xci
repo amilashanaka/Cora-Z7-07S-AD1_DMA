@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "Fir_filter_axi_dma_0_0",
-    "cell_name": "filter/fir_dma",
+    "cell_name": "fir_dma",
     "component_reference": "xilinx.com:ip:axi_dma:7.1",
     "ip_revision": "33",
     "gen_directory": "../../../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_axi_dma_0_0",
