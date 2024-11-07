@@ -115,7 +115,10 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.cache/wt [current_project]
   set_property parent.project_path C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.xpr [current_project]
-  set_property ip_repo_paths C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo [current_project]
+  set_property ip_repo_paths {
+  C:/Projects/ERN24004/Projects/ip_repo/myip_1_0
+  C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo
+} [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

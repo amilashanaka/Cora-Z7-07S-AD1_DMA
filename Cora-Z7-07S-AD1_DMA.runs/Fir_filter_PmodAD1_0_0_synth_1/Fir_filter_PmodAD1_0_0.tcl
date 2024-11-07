@@ -70,13 +70,16 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:cora-z7-07s:part0:1.1 [current_project]
-set_property ip_repo_paths c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo [current_project]
+set_property ip_repo_paths {
+  c:/Projects/ERN24004/Projects/ip_repo/myip_1_0
+  c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/Fir_filter_PmodAD1_0_0.xci
+read_ip -quiet C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/Fir_filter_PmodAD1_0_0.xci
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/pmod_bridge_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/src/pmod_concat_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/Fir_filter_PmodAD1_0_0_board.xdc]

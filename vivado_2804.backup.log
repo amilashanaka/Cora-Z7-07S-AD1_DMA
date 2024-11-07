@@ -1,0 +1,539 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Thu Nov  7 10:40:40 2024
+# Process ID: 2804
+# Current directory: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5228 C:\Projects\ERN24004\Projects\Cora-Z7-07S-AD1_DMA\Cora-Z7-07S-AD1_DMA.xpr
+# Log file: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/vivado.log
+# Journal file: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA\vivado.jou
+# Running On        :DonGun
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency     :3418 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36272 MB
+# Available Virtual :24826 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ip_repo/myip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2121.562 ; gain = 865.645
+update_compile_order -fileset sources_1
+open_bd_design {C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd}
+Reading block design file <C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- spicerconsulting:IP:AD1DMA:1.0 - AD1_DMA
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - fir_dma
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/fir_dma/M_AXIS_MM2S'. Parameter ignored.
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/fir_dma/M_AXIS_MM2S'. Parameter ignored.
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Successfully read diagram <Fir_filter> from block design file <C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd>
+open_bd_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2328.789 ; gain = 186.488
+regenerate_bd_layout
+ipx::edit_ip_in_project -upgrade true -name AD1DMA_v1_0_project -directory C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.tmp/AD1DMA_v1_0_project c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/projects/ern24004/projects/cora-z7-07s-ad1_dma/cora-z7-07s-ad1_dma.tmp/ad1dma_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ip_repo/myip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [IP_Flow 19-3664] IP 'pmod_bridge_0' generated file not found 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/src/pmod_bridge_0/pmod_bridge_0.vho'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'pmod_bridge_0' generated file not found 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/src/pmod_bridge_0/pmod_bridge_0.veo'. Please regenerate to continue.
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-4963] pmod_bridge_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:arty:part0:1.1'
+INFO: [IP_Flow 19-4657] Not packaging board specific IP generated file 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/utils/board/board.xit'.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-4963] pmod_bridge_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:arty:part0:1.1'
+INFO: [IP_Flow 19-4657] Not packaging board specific IP generated file 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/utils/board/board.xit'.
+CRITICAL WARNING: [IP_Flow 19-4834] IP port (m00_axi_aresetn) was removed from the interface 'm00_axi_aresetn'. Please review the IP interface 'm00_axi_aresetn'.
+CRITICAL WARNING: [IP_Flow 19-4834] IP port (m00_axi_aclk) was removed from the interface 'm00_axi_aclk'. Please review the IP interface 'm00_axi_aclk'.
+CRITICAL WARNING: [IP_Flow 19-4835] Multiple IP ports (m00_axi_rready m00_axi_rvalid m00_axi_rresp m00_axi_rdata m00_axi_arready m00_axi_arvalid m00_axi_arprot m00_axi_araddr m00_axi_bready m00_axi_bvalid m00_axi_bresp m00_axi_wready m00_axi_wvalid m00_axi_wstrb m00_axi_wdata m00_axi_awready m00_axi_awvalid m00_axi_awprot m00_axi_awaddr) were removed from the interface 'm00_axi'. Please review the IP interface 'm00_axi'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-3166] Bus Interface 'AXI_LITE_SAMPLE': References existing memory map 'AXI_LITE_SAMPLE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'm_axi_aresetn'.
+ipx::infer_bus_interface {m_axi_init_axi_txn m_axi_error m_axi_txn_done m_axi_awaddr m_axi_awprot m_axi_awvalid m_axi_awready m_axi_wdata m_axi_wstrb m_axi_wvalid m_axi_wready m_axi_bresp m_axi_bvalid m_axi_bready m_axi_araddr m_axi_arprot m_axi_arvalid m_axi_arready m_axi_rdata m_axi_rresp m_axi_rvalid m_axi_rready} xilinx.com:interface:aximm_rtl:1.0 [ipx::current_core]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from TCL Argument).
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-861] XGUI layout file basename "xgui/PmodAD1_v1_0.tcl" does not have the current IP <name>_v<version> format. If the IP name or version was changed recently, recreate this file to update the file format.
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_S00_AXI_DATA_WIDTH (C S00 AXI DATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_S00_AXI_ADDR_WIDTH (C S00 AXI ADDR WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-3507] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': The referenced subcore 'digilentinc.com:ip:pmod_bridge:1.0' is not the latest version in the IP catalog. The latest version is 'digilentinc.com:ip:pmod_bridge:1.1'.
+WARNING: [IP_Flow 19-3507] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': The referenced subcore 'digilentinc.com:ip:pmod_bridge:1.0' is not the latest version in the IP catalog. The latest version is 'digilentinc.com:ip:pmod_bridge:1.1'.
+WARNING: [IP_Flow 19-3507] File Group 'xilinx_implementation (Implementation)': The referenced subcore 'digilentinc.com:ip:pmod_bridge:1.0' is not the latest version in the IP catalog. The latest version is 'digilentinc.com:ip:pmod_bridge:1.1'.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_LITE_SAMPLE_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11886] Bus Interface 'Pmod_out' is not associated with any clock interface
+WARNING: [IP_Flow 19-5661] Bus Interface 'm_axi_aclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'm_axi_aclk' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-3158] Bus Interface 'm_axi': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv spicerconsulting:IP:AD1DMA:1.0 [get_ips  Fir_filter_PmodAD1_0_0] -log ip_upgrade.log
+Upgrading 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M00_AXI_START_DATA_VALUE' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '0xAA000000'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M00_AXI_TARGET_SLAVE_BASE_ADDR' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '0x40000000'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M00_AXI_ADDR_WIDTH' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '32'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M00_AXI_DATA_WIDTH' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '32'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M00_AXI_TRANSACTIONS_NUM' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '4'
+INFO: [IP_Flow 19-3422] Upgraded Fir_filter_PmodAD1_0_0 (AD1DMA_v1_0 1.0) from revision 2 to revision 3
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'm00_axi'
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'm_axi' (xilinx.com:interface:aximm:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'Fir_filter_PmodAD1_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_aclk'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_araddr'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_aresetn'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_arprot'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_arready'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_arvalid'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_awaddr'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_awprot'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_awready'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_awvalid'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_bready'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_bresp'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_bvalid'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_error'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_init_axi_txn'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_rdata'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_rready'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_rresp'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_rvalid'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_txn_done'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_wdata'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_wready'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_wstrb'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm00_axi_wvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_aclk'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_araddr'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_aresetn'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_arprot'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_arready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_arvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_awaddr'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_awprot'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_awready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_awvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_bready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_bresp'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_bvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_error'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_init_axi_txn'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_rdata'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_rready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_rresp'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_rvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_txn_done'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_wdata'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_wready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_wstrb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_wvalid'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Fir_filter_PmodAD1_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 'm00_axi' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/AD1_DMA'. Its connection to the interface net 'AD1_DMA_m00_axi' has been removed. 
+CRITICAL WARNING: [BD 41-1167] The pin 'm00_axi_aclk' is not found on the upgraded version of the cell '/AD1_DMA'. Its connection to the net 'processing_system7_0_FCLK_CLK1' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'm00_axi_aresetn' is not found on the upgraded version of the cell '/AD1_DMA'. Its connection to the net 'rst_ps7_0_50M_peripheral_aresetn' has been removed.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'Fir_filter_PmodAD1_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+WARNING: [BD 41-2671] The dangling interface net <AD1_DMA_m00_axi> will not be written out to the BD file.
+Wrote  : <C:\Projects\ERN24004\Projects\Cora-Z7-07S-AD1_DMA\Cora-Z7-07S-AD1_DMA.srcs\sources_1\bd\Fir_filter\Fir_filter.bd> 
+Wrote  : <C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/ui/bd_7f657328.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Fir_filter_PmodAD1_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/AD1_DMA/m_axi_aclk
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/AD1_DMA/m_axi} Slave {/fir_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins AD1_DMA/m_axi]
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins AD1_DMA/m_axi_aclk]
+endgroup
+delete_bd_objs [get_bd_nets reset_rtl_1] [get_bd_nets sys_clock_1] [get_bd_nets processing_system7_0_FCLK_CLK1] [get_bd_cells clk_wiz]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins ps7_0_axi_periph/M01_ACLK]
+delete_bd_objs [get_bd_ports sys_clock]
+delete_bd_objs [get_bd_ports reset_rtl]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+report_ip_status -name ip_status 
+validate_bd_design
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /AD1_DMA/AXI_LITE_SAMPLE'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /AD1_DMA/AXI_LITE_SAMPLE'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /AD1_DMA/AXI_LITE_SAMPLE'
+CRITICAL WARNING: [BD 41-967] AXI interface pin /AD1_DMA/m_axi is not associated to any clock pin. It may not work correctly.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /ps7_0_axi_periph/xbar/S01_AXI(50000000) and /AD1_DMA/m_axi(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <C:\Projects\ERN24004\Projects\Cora-Z7-07S-AD1_DMA\Cora-Z7-07S-AD1_DMA.srcs\sources_1\bd\Fir_filter\Fir_filter.bd> 
+Wrote  : <C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/ui/bd_7f657328.ui> 
+validate_bd_design
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /AD1_DMA/AXI_LITE_SAMPLE'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /AD1_DMA/AXI_LITE_SAMPLE'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /AD1_DMA/AXI_LITE_SAMPLE'
+CRITICAL WARNING: [BD 41-967] AXI interface pin /AD1_DMA/m_axi is not associated to any clock pin. It may not work correctly.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /ps7_0_axi_periph/xbar/S01_AXI(50000000) and /AD1_DMA/m_axi(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+ipx::edit_ip_in_project -upgrade true -name AD1DMA_v1_0_project -directory C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.tmp/AD1DMA_v1_0_project c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/projects/ern24004/projects/cora-z7-07s-ad1_dma/cora-z7-07s-ad1_dma.tmp/ad1dma_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ip_repo/myip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [IP_Flow 19-3664] IP 'pmod_bridge_0' generated file not found 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/src/pmod_bridge_0/pmod_bridge_0.vho'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'pmod_bridge_0' generated file not found 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/src/pmod_bridge_0/pmod_bridge_0.veo'. Please regenerate to continue.
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-4963] pmod_bridge_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:arty:part0:1.1'
+INFO: [IP_Flow 19-4657] Not packaging board specific IP generated file 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/utils/board/board.xit'.
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-861] XGUI layout file basename "xgui/PmodAD1_v1_0.tcl" does not have the current IP <name>_v<version> format. If the IP name or version was changed recently, recreate this file to update the file format.
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_S00_AXI_DATA_WIDTH (C S00 AXI DATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_S00_AXI_ADDR_WIDTH (C S00 AXI ADDR WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-3507] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': The referenced subcore 'digilentinc.com:ip:pmod_bridge:1.0' is not the latest version in the IP catalog. The latest version is 'digilentinc.com:ip:pmod_bridge:1.1'.
+WARNING: [IP_Flow 19-3507] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': The referenced subcore 'digilentinc.com:ip:pmod_bridge:1.0' is not the latest version in the IP catalog. The latest version is 'digilentinc.com:ip:pmod_bridge:1.1'.
+WARNING: [IP_Flow 19-3507] File Group 'xilinx_implementation (Implementation)': The referenced subcore 'digilentinc.com:ip:pmod_bridge:1.0' is not the latest version in the IP catalog. The latest version is 'digilentinc.com:ip:pmod_bridge:1.1'.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_LITE_SAMPLE_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11886] Bus Interface 'Pmod_out' is not associated with any clock interface
+WARNING: [IP_Flow 19-5661] Bus Interface 'm_axi_aclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'm_axi_aclk' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-3158] Bus Interface 'm_axi': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv spicerconsulting:IP:AD1DMA:1.0 [get_ips  Fir_filter_PmodAD1_0_0] -log ip_upgrade.log
+Upgrading 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd'
+INFO: [IP_Flow 19-3422] Upgraded Fir_filter_PmodAD1_0_0 (AD1DMA_v1_0 1.0) from revision 3 to revision 4
+Wrote  : <C:\Projects\ERN24004\Projects\Cora-Z7-07S-AD1_DMA\Cora-Z7-07S-AD1_DMA.srcs\sources_1\bd\Fir_filter\Fir_filter.bd> 
+Wrote  : <C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/ui/bd_7f657328.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Fir_filter_PmodAD1_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd]
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /AD1_DMA/AXI_LITE_SAMPLE'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /AD1_DMA/AXI_LITE_SAMPLE'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /AD1_DMA/AXI_LITE_SAMPLE'
+CRITICAL WARNING: [BD 41-967] AXI interface pin /AD1_DMA/m_axi is not associated to any clock pin. It may not work correctly.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /ps7_0_axi_periph/xbar/S01_AXI(50000000) and /AD1_DMA/m_axi(100000000)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd 
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2328.789 ; gain = 0.000
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_EN_CLK1_PORT {1} \
+  CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {100} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK1 (100 MHz)} Freq {100} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins axi_mem_intercon/M00_ACLK]
+regenerate_bd_layout
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins AD1_DMA/m_axi_aclk]
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+create_bd_cell: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2637.473 ; gain = 308.684
+apply_bd_automation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2637.473 ; gain = 308.684
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins AD1_DMA/s00_axi_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_mem_intercon/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_mem_intercon/S00_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_mem_intercon/S01_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.0 /sys_clock
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz/reset]
+INFO: [BoardRule 102-10] create_bd_port -dir I reset_rtl -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+INFO: [BoardRule 102-15] connect_bd_net /reset_rtl /clk_wiz/reset
+INFO: [BoardRule 102-19] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [BoardRule 102-1] Board automation did not generate location constraint for /clk_wiz/reset. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins fir/aclk]
+INFO: [BD 5-455] Automation on '/fir_dma/m_axi_mm2s_aclk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/fir_dma/m_axi_s2mm_aclk' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins fir_dma/s_axi_lite_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins ps7_0_axi_periph/ACLK]
+INFO: [BD 5-455] Automation on '/ps7_0_axi_periph/M00_ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/ps7_0_axi_periph/M01_ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/ps7_0_axi_periph/S00_ACLK' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins ps7_0_axi_periph/S01_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
+endgroup
+report_ip_status -name ip_status 
+validate_bd_design
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /AD1_DMA/m_axi'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /AD1_DMA/m_axi'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /AD1_DMA/m_axi'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [BD 41-967] AXI interface pin /AD1_DMA/m_axi is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-1343] Reset pin /axi_mem_intercon/M00_ARESETN (associated clock /axi_mem_intercon/M00_ACLK) is connected to reset source /rst_ps7_0_50M/peripheral_aresetn (synchronous to clock source /processing_system7_0/FCLK_CLK0).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /processing_system7_0/FCLK_CLK1.
+CRITICAL WARNING: [BD 41-1343] Reset pin /AD1_DMA/m_axi_aresetn (associated clock /AD1_DMA/m_axi_aclk) is connected to reset source /rst_ps7_0_50M/peripheral_aresetn (synchronous to clock source /processing_system7_0/FCLK_CLK0).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz/clk_out1.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /ps7_0_axi_periph/xbar/S01_AXI(50000000) and /AD1_DMA/m_axi(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+delete_bd_objs [get_bd_nets clk_wiz_clk_out1]
+connect_bd_net [get_bd_pins AD1_DMA/m_axi_init_axi_txn] [get_bd_pins processing_system7_0/FCLK_CLK1]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins AD1_DMA/m_axi_aclk]
+delete_bd_objs [get_bd_nets reset_rtl_1] [get_bd_nets sys_clock_1] [get_bd_cells clk_wiz]
+delete_bd_objs [get_bd_ports sys_clock]
+delete_bd_objs [get_bd_ports reset_rtl]
+validate_bd_design
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /AD1_DMA/m_axi'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /AD1_DMA/m_axi'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /AD1_DMA/m_axi'
+CRITICAL WARNING: [BD 41-967] AXI interface pin /AD1_DMA/m_axi is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-1343] Reset pin /axi_mem_intercon/M00_ARESETN (associated clock /axi_mem_intercon/M00_ACLK) is connected to reset source /rst_ps7_0_50M/peripheral_aresetn (synchronous to clock source /processing_system7_0/FCLK_CLK0).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /processing_system7_0/FCLK_CLK1.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /ps7_0_axi_periph/xbar/S01_AXI(50000000) and /AD1_DMA/m_axi(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+endgroup
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins AD1_DMA/m_axi_init_axi_txn]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {50} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_mem_intercon/M00_ACLK]
+INFO: [BD 5-455] Automation on '/processing_system7_0/S_AXI_HP0_ACLK' will not be run, since it is obsolete due to previously run automations
+endgroup
+report_ip_status -name ip_status 
+validate_bd_design
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /processing_system7_0/S_AXI_HP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /processing_system7_0/S_AXI_HP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /processing_system7_0/S_AXI_HP0'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [BD 41-967] AXI interface pin /AD1_DMA/m_axi is not associated to any clock pin. It may not work correctly.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /ps7_0_axi_periph/xbar/S01_AXI(50000000) and /AD1_DMA/m_axi(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+validate_bd_design
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /processing_system7_0/S_AXI_HP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /processing_system7_0/S_AXI_HP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /processing_system7_0/S_AXI_HP0'
+CRITICAL WARNING: [BD 41-967] AXI interface pin /AD1_DMA/m_axi is not associated to any clock pin. It may not work correctly.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /ps7_0_axi_periph/xbar/S01_AXI(50000000) and /AD1_DMA/m_axi(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+regenerate_bd_layout
+regenerate_bd_layout
+report_ip_status -name ip_status 
+reset_run Fir_filter_processing_system7_0_0_synth_1
+reset_run Fir_filter_xbar_1_synth_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/utils_1/imports/synth_1/Fir_filter_wrapper.dcp with file C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/Fir_filter_wrapper.dcp
+save_bd_design
+Wrote  : <C:\Projects\ERN24004\Projects\Cora-Z7-07S-AD1_DMA\Cora-Z7-07S-AD1_DMA.srcs\sources_1\bd\Fir_filter\Fir_filter.bd> 
+Wrote  : <C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/ui/bd_7f657328.ui> 
+launch_runs impl_1 -jobs 4
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /processing_system7_0/S_AXI_HP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /processing_system7_0/S_AXI_HP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /processing_system7_0/S_AXI_HP0'
+CRITICAL WARNING: [BD 41-967] AXI interface pin /AD1_DMA/m_axi is not associated to any clock pin. It may not work correctly.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /ps7_0_axi_periph/xbar/S01_AXI(50000000) and /AD1_DMA/m_axi(100000000)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd 
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP Fir_filter_PmodAD1_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP Fir_filter_xbar_1
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Fir_filter_PmodAD1_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Fir_filter_xbar_1
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+report_ip_status -name ip_status 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property CONFIG.PCW_EN_CLK1_PORT {0} [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [BD 41-1684] Pin /processing_system7_0/FCLK_CLK1 is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK1]
+endgroup
+validate_bd_design
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /processing_system7_0/S_AXI_HP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /processing_system7_0/S_AXI_HP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /processing_system7_0/S_AXI_HP0'
+CRITICAL WARNING: [BD 41-967] AXI interface pin /AD1_DMA/m_axi is not associated to any clock pin. It may not work correctly.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /ps7_0_axi_periph/xbar/S01_AXI(50000000) and /AD1_DMA/m_axi(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name AD1DMA_v1_0_project -directory C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.tmp/AD1DMA_v1_0_project c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/projects/ern24004/projects/cora-z7-07s-ad1_dma/cora-z7-07s-ad1_dma.tmp/ad1dma_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ip_repo/myip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [IP_Flow 19-3664] IP 'pmod_bridge_0' generated file not found 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/src/pmod_bridge_0/pmod_bridge_0.vho'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'pmod_bridge_0' generated file not found 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/src/pmod_bridge_0/pmod_bridge_0.veo'. Please regenerate to continue.
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-4963] pmod_bridge_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:arty:part0:1.1'
+INFO: [IP_Flow 19-4657] Not packaging board specific IP generated file 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/utils/board/board.xit'.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-4963] pmod_bridge_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:arty:part0:1.1'
+INFO: [IP_Flow 19-4657] Not packaging board specific IP generated file 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/utils/board/board.xit'.
+INFO: [IP_Flow 19-3166] Bus Interface 'AXI_LITE_SAMPLE': References existing memory map 'AXI_LITE_SAMPLE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-861] XGUI layout file basename "xgui/PmodAD1_v1_0.tcl" does not have the current IP <name>_v<version> format. If the IP name or version was changed recently, recreate this file to update the file format.
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_S00_AXI_DATA_WIDTH (C S00 AXI DATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_S00_AXI_ADDR_WIDTH (C S00 AXI ADDR WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-3507] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': The referenced subcore 'digilentinc.com:ip:pmod_bridge:1.0' is not the latest version in the IP catalog. The latest version is 'digilentinc.com:ip:pmod_bridge:1.1'.
+WARNING: [IP_Flow 19-3507] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': The referenced subcore 'digilentinc.com:ip:pmod_bridge:1.0' is not the latest version in the IP catalog. The latest version is 'digilentinc.com:ip:pmod_bridge:1.1'.
+WARNING: [IP_Flow 19-3507] File Group 'xilinx_implementation (Implementation)': The referenced subcore 'digilentinc.com:ip:pmod_bridge:1.0' is not the latest version in the IP catalog. The latest version is 'digilentinc.com:ip:pmod_bridge:1.1'.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_LITE_SAMPLE_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11886] Bus Interface 'Pmod_out' is not associated with any clock interface
+WARNING: [IP_Flow 19-11770] Clock interface 'm_axi_aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv spicerconsulting:IP:AD1DMA:1.0 [get_ips  Fir_filter_PmodAD1_0_0] -log ip_upgrade.log
+Upgrading 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd'
+INFO: [IP_Flow 19-3422] Upgraded Fir_filter_PmodAD1_0_0 (AD1DMA_v1_0 1.0) from revision 4 to revision 5
+Wrote  : <C:\Projects\ERN24004\Projects\Cora-Z7-07S-AD1_DMA\Cora-Z7-07S-AD1_DMA.srcs\sources_1\bd\Fir_filter\Fir_filter.bd> 
+Wrote  : <C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/ui/bd_7f657328.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Fir_filter_PmodAD1_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd]
+CRITICAL WARNING: [BD 41-1356] Slave segment </fir_dma/S_AXI_LITE/Reg> is not assigned into address space </AD1_DMA/m_axi>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </AD1_DMA/AXI_LITE_SAMPLE/Reg0> is not assigned into address space </AD1_DMA/m_axi>. Please use Address Editor to either assign or exclude it.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /processing_system7_0/S_AXI_HP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /processing_system7_0/S_AXI_HP0'
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/AD1_DMA/m_axi_init_axi_txn
+
+Wrote  : <C:\Projects\ERN24004\Projects\Cora-Z7-07S-AD1_DMA\Cora-Z7-07S-AD1_DMA.srcs\sources_1\bd\Fir_filter\Fir_filter.bd> 
+Wrote  : <C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/ui/bd_7f657328.ui> 

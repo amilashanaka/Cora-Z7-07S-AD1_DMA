@@ -8,13 +8,14 @@
   **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
   **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
   **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Thu Nov  7 09:51:55 2024
+  **** Start of session at: Thu Nov  7 11:10:47 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source Fir_filter_xbar_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 691.746 ; gain = 238.770
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 692.141 ; gain = 237.562
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ip_repo/myip_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Fir_filter_xbar_1
@@ -26,9 +27,9 @@ INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 31092
+INFO: [Synth 8-7075] Helper process launched with PID 3592
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1566.309 ; gain = 443.934
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1567.762 ; gain = 446.785
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Fir_filter_xbar_1' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_xbar_1/synth/Fir_filter_xbar_1.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_33_axi_crossbar' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
@@ -41,24 +42,28 @@ INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_compara
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_33_addr_decoder' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_33_decerr_slave' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_33_decerr_slave' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_33_addr_arbiter_sasd' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_33_addr_arbiter_sasd' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_33_splitter' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_33_splitter' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_33_splitter__parameterized0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_33_splitter__parameterized0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_32_axic_register_slice' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/676c/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_32_axic_register_slice' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/676c/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_32_axic_register_slice' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/676c/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_32_axic_register_slice' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/676c/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized4' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized4' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_33_crossbar_sasd' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:1234]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_33_axi_crossbar' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
 INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_xbar_1' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_xbar_1/synth/Fir_filter_xbar_1.v:53]
@@ -66,7 +71,6 @@ WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_t
 WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:2062]
 WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:2073]
 WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v:2086]
-WARNING: [Synth 8-7129] Port S[0] in module generic_baseblocks_v2_1_2_mux_enc__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_33_decerr_slave is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_33_decerr_slave is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_33_decerr_slave is either unconnected or has no load
@@ -80,13 +84,26 @@ WARNING: [Synth 8-7129] Port S_AXI_ARLEN[1] in module axi_crossbar_v2_1_33_decer
 WARNING: [Synth 8-7129] Port S_AXI_ARLEN[0] in module axi_crossbar_v2_1_33_decerr_slave is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_33_addr_decoder is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_33_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[1] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[1] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[0] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[1] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_BID[1] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_RID[1] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module axi_crossbar_v2_1_33_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[15] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[14] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[13] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[12] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[11] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[10] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[9] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[8] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
@@ -95,25 +112,52 @@ WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_33_axi_c
 WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[5] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[4] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[3] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[3] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[7] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[6] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[5] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[4] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[7] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[6] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[5] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[4] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_wlast[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[15] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[14] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[13] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[12] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[11] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[10] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[9] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[8] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
@@ -122,44 +166,25 @@ WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_crossbar_v2_1_33_axi_c
 WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[5] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[4] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[3] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_bid[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_buser[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rid[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rlast[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rlast[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_ruser[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1814.273 ; gain = 691.898
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1814.273 ; gain = 691.898
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1814.273 ; gain = 691.898
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1814.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1815.219 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -170,31 +195,31 @@ Parsing XDC File [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-
 Finished Parsing XDC File [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/Fir_filter_xbar_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1901.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1815.219 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1901.324 ; gain = 0.156
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1815.219 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/Fir_filter_xbar_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -204,14 +229,14 @@ Detailed RTL Component Info :
 	               64 Bit    Registers := 1     
 	               36 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 14    
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 11    
 +---Muxes : 
-	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 2     
 	   2 Input   36 Bit        Muxes := 2     
 	   2 Input    3 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 30    
+	   2 Input    1 Bit        Muxes := 32    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -229,46 +254,26 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/676c/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
-WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_33_axi_crossbar is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -286,37 +291,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -333,37 +338,38 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT1 |     1|
-|2     |LUT2 |    12|
-|3     |LUT3 |     3|
-|4     |LUT4 |    46|
-|5     |LUT5 |    16|
-|6     |LUT6 |    58|
-|7     |FDRE |   130|
+|2     |LUT2 |    19|
+|3     |LUT3 |    42|
+|4     |LUT4 |    67|
+|5     |LUT5 |    10|
+|6     |LUT6 |   104|
+|7     |FDRE |   137|
+|8     |FDSE |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1815.219 ; gain = 694.242
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1901.324 ; gain = 691.898
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1901.324 ; gain = 778.949
+Synthesis finished with 0 errors, 0 critical warnings and 113 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1815.219 ; gain = 694.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1815.219 ; gain = 694.242
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1901.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1815.219 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1901.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1815.219 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 3e78d892
+Synth Design complete | Checksum: 349b2baf
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+57 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1901.324 ; gain = 1183.086
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1901.324 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1815.219 ; gain = 1096.965
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1815.219 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/Fir_filter_xbar_1_synth_1/Fir_filter_xbar_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Fir_filter_xbar_1, cache-ID = ff312d24076f2ad3
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Fir_filter_xbar_1, cache-ID = 7cda9ece154a41da
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1901.324 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1815.219 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/Fir_filter_xbar_1_synth_1/Fir_filter_xbar_1.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file Fir_filter_xbar_1_utilization_synth.rpt -pb Fir_filter_xbar_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 09:52:51 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 11:11:37 2024...

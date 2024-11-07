@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:c:/Projects/ERN24004/Projects/PYNQ/03_Fir/Fir/Fir.gen/sources_1/bd/Fir_filter/ip/Fir_filter_processing_system7_0_0/Fir_filter_processing_system7_0_0.xdc rfile:../../../Fir.gen/sources_1/bd/Fir_filter/ip/Fir_filter_processing_system7_0_0/Fir_filter_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_processing_system7_0_0/Fir_filter_processing_system7_0_0.xdc rfile:../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_processing_system7_0_0/Fir_filter_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.6

@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-// Date        : Thu Nov  7 09:53:37 2024
+// Date        : Thu Nov  7 11:11:33 2024
 // Host        : DonGun running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ Fir_filter_PmodAD1_0_0_sim_netlist.v
@@ -40,6 +40,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
     Pmod_out_pin9_i,
     Pmod_out_pin9_o,
     Pmod_out_pin9_t,
+    s00_axi_aclk,
+    s00_axi_aresetn,
     s00_axi_awaddr,
     s00_axi_awprot,
     s00_axi_awvalid,
@@ -59,8 +61,30 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
     s00_axi_rresp,
     s00_axi_rvalid,
     s00_axi_rready,
-    s00_axi_aclk,
-    s00_axi_aresetn);
+    m_axi_init_axi_txn,
+    m_axi_error,
+    m_axi_txn_done,
+    m_axi_aclk,
+    m_axi_aresetn,
+    m_axi_awaddr,
+    m_axi_awprot,
+    m_axi_awvalid,
+    m_axi_awready,
+    m_axi_wdata,
+    m_axi_wstrb,
+    m_axi_wvalid,
+    m_axi_wready,
+    m_axi_bresp,
+    m_axi_bvalid,
+    m_axi_bready,
+    m_axi_araddr,
+    m_axi_arprot,
+    m_axi_arvalid,
+    m_axi_arready,
+    m_axi_rdata,
+    m_axi_rresp,
+    m_axi_rvalid,
+    m_axi_rready);
   (* X_INTERFACE_INFO = "digilentinc.com:interface:pmod:1.0 Pmod_out PIN10_I" *) input Pmod_out_pin10_i;
   (* X_INTERFACE_INFO = "digilentinc.com:interface:pmod:1.0 Pmod_out PIN10_O" *) output Pmod_out_pin10_o;
   (* X_INTERFACE_INFO = "digilentinc.com:interface:pmod:1.0 Pmod_out PIN10_T" *) output Pmod_out_pin10_t;
@@ -85,6 +109,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* X_INTERFACE_INFO = "digilentinc.com:interface:pmod:1.0 Pmod_out PIN9_I" *) input Pmod_out_pin9_i;
   (* X_INTERFACE_INFO = "digilentinc.com:interface:pmod:1.0 Pmod_out PIN9_O" *) output Pmod_out_pin9_o;
   (* X_INTERFACE_INFO = "digilentinc.com:interface:pmod:1.0 Pmod_out PIN9_T" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME Pmod_out, BOARD.ASSOCIATED_PARAM PMOD" *) output Pmod_out_pin9_t;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 AXI_LITE_SAMPLE_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME AXI_LITE_SAMPLE_CLK, ASSOCIATED_BUSIF AXI_LITE_SAMPLE, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Fir_filter_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 AXI_LITE_SAMPLE_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME AXI_LITE_SAMPLE_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE AWADDR" *) input [3:0]s00_axi_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE AWPROT" *) input [2:0]s00_axi_awprot;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE AWVALID" *) input s00_axi_awvalid;
@@ -104,8 +130,30 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE RRESP" *) output [1:0]s00_axi_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE RVALID" *) output s00_axi_rvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME AXI_LITE_SAMPLE, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN Fir_filter_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s00_axi_rready;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 AXI_LITE_SAMPLE_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME AXI_LITE_SAMPLE_CLK, ASSOCIATED_BUSIF AXI_LITE_SAMPLE, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Fir_filter_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 AXI_LITE_SAMPLE_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME AXI_LITE_SAMPLE_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
+  input m_axi_init_axi_txn;
+  output m_axi_error;
+  output m_axi_txn_done;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 m_axi_aclk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_aclk, ASSOCIATED_RESET m_axi_aresetn, ASSOCIATED_BUSIF m_axi, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Fir_filter_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input m_axi_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 m_axi_aresetn RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input m_axi_aresetn;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWADDR" *) output [31:0]m_axi_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWPROT" *) output [2:0]m_axi_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWVALID" *) output m_axi_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi AWREADY" *) input m_axi_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi WDATA" *) output [31:0]m_axi_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi WSTRB" *) output [3:0]m_axi_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi WVALID" *) output m_axi_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi WREADY" *) input m_axi_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BRESP" *) input [1:0]m_axi_bresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BVALID" *) input m_axi_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi BREADY" *) output m_axi_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARADDR" *) output [31:0]m_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARPROT" *) output [2:0]m_axi_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARVALID" *) output m_axi_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi ARREADY" *) input m_axi_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RDATA" *) input [31:0]m_axi_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RRESP" *) input [1:0]m_axi_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RVALID" *) input m_axi_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN Fir_filter_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_rready;
 
   wire \<const0> ;
   wire \<const1> ;
@@ -144,7 +192,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   wire NLW_inst_Pmod_out_pin8_t_UNCONNECTED;
   wire NLW_inst_Pmod_out_pin9_o_UNCONNECTED;
   wire NLW_inst_Pmod_out_pin9_t_UNCONNECTED;
+  wire NLW_inst_m_axi_arvalid_UNCONNECTED;
+  wire NLW_inst_m_axi_awvalid_UNCONNECTED;
+  wire NLW_inst_m_axi_bready_UNCONNECTED;
+  wire NLW_inst_m_axi_error_UNCONNECTED;
+  wire NLW_inst_m_axi_rready_UNCONNECTED;
+  wire NLW_inst_m_axi_txn_done_UNCONNECTED;
+  wire NLW_inst_m_axi_wvalid_UNCONNECTED;
   wire [1:0]NLW_inst_led_UNCONNECTED;
+  wire [31:0]NLW_inst_m_axi_araddr_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_arprot_UNCONNECTED;
+  wire [31:0]NLW_inst_m_axi_awaddr_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_awprot_UNCONNECTED;
+  wire [31:0]NLW_inst_m_axi_wdata_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_wstrb_UNCONNECTED;
   wire [1:0]NLW_inst_s00_axi_bresp_UNCONNECTED;
   wire [1:0]NLW_inst_s00_axi_rresp_UNCONNECTED;
 
@@ -162,6 +223,119 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   assign Pmod_out_pin8_t = \<const1> ;
   assign Pmod_out_pin9_o = \<const1> ;
   assign Pmod_out_pin9_t = \<const1> ;
+  assign m_axi_araddr[31] = \<const0> ;
+  assign m_axi_araddr[30] = \<const0> ;
+  assign m_axi_araddr[29] = \<const0> ;
+  assign m_axi_araddr[28] = \<const0> ;
+  assign m_axi_araddr[27] = \<const0> ;
+  assign m_axi_araddr[26] = \<const0> ;
+  assign m_axi_araddr[25] = \<const0> ;
+  assign m_axi_araddr[24] = \<const0> ;
+  assign m_axi_araddr[23] = \<const0> ;
+  assign m_axi_araddr[22] = \<const0> ;
+  assign m_axi_araddr[21] = \<const0> ;
+  assign m_axi_araddr[20] = \<const0> ;
+  assign m_axi_araddr[19] = \<const0> ;
+  assign m_axi_araddr[18] = \<const0> ;
+  assign m_axi_araddr[17] = \<const0> ;
+  assign m_axi_araddr[16] = \<const0> ;
+  assign m_axi_araddr[15] = \<const0> ;
+  assign m_axi_araddr[14] = \<const0> ;
+  assign m_axi_araddr[13] = \<const0> ;
+  assign m_axi_araddr[12] = \<const0> ;
+  assign m_axi_araddr[11] = \<const0> ;
+  assign m_axi_araddr[10] = \<const0> ;
+  assign m_axi_araddr[9] = \<const0> ;
+  assign m_axi_araddr[8] = \<const0> ;
+  assign m_axi_araddr[7] = \<const0> ;
+  assign m_axi_araddr[6] = \<const0> ;
+  assign m_axi_araddr[5] = \<const0> ;
+  assign m_axi_araddr[4] = \<const0> ;
+  assign m_axi_araddr[3] = \<const0> ;
+  assign m_axi_araddr[2] = \<const0> ;
+  assign m_axi_araddr[1] = \<const0> ;
+  assign m_axi_araddr[0] = \<const0> ;
+  assign m_axi_arprot[2] = \<const0> ;
+  assign m_axi_arprot[1] = \<const0> ;
+  assign m_axi_arprot[0] = \<const0> ;
+  assign m_axi_arvalid = \<const0> ;
+  assign m_axi_awaddr[31] = \<const0> ;
+  assign m_axi_awaddr[30] = \<const0> ;
+  assign m_axi_awaddr[29] = \<const0> ;
+  assign m_axi_awaddr[28] = \<const0> ;
+  assign m_axi_awaddr[27] = \<const0> ;
+  assign m_axi_awaddr[26] = \<const0> ;
+  assign m_axi_awaddr[25] = \<const0> ;
+  assign m_axi_awaddr[24] = \<const0> ;
+  assign m_axi_awaddr[23] = \<const0> ;
+  assign m_axi_awaddr[22] = \<const0> ;
+  assign m_axi_awaddr[21] = \<const0> ;
+  assign m_axi_awaddr[20] = \<const0> ;
+  assign m_axi_awaddr[19] = \<const0> ;
+  assign m_axi_awaddr[18] = \<const0> ;
+  assign m_axi_awaddr[17] = \<const0> ;
+  assign m_axi_awaddr[16] = \<const0> ;
+  assign m_axi_awaddr[15] = \<const0> ;
+  assign m_axi_awaddr[14] = \<const0> ;
+  assign m_axi_awaddr[13] = \<const0> ;
+  assign m_axi_awaddr[12] = \<const0> ;
+  assign m_axi_awaddr[11] = \<const0> ;
+  assign m_axi_awaddr[10] = \<const0> ;
+  assign m_axi_awaddr[9] = \<const0> ;
+  assign m_axi_awaddr[8] = \<const0> ;
+  assign m_axi_awaddr[7] = \<const0> ;
+  assign m_axi_awaddr[6] = \<const0> ;
+  assign m_axi_awaddr[5] = \<const0> ;
+  assign m_axi_awaddr[4] = \<const0> ;
+  assign m_axi_awaddr[3] = \<const0> ;
+  assign m_axi_awaddr[2] = \<const0> ;
+  assign m_axi_awaddr[1] = \<const0> ;
+  assign m_axi_awaddr[0] = \<const0> ;
+  assign m_axi_awprot[2] = \<const0> ;
+  assign m_axi_awprot[1] = \<const0> ;
+  assign m_axi_awprot[0] = \<const0> ;
+  assign m_axi_awvalid = \<const0> ;
+  assign m_axi_bready = \<const0> ;
+  assign m_axi_error = \<const0> ;
+  assign m_axi_rready = \<const0> ;
+  assign m_axi_txn_done = \<const0> ;
+  assign m_axi_wdata[31] = \<const0> ;
+  assign m_axi_wdata[30] = \<const0> ;
+  assign m_axi_wdata[29] = \<const0> ;
+  assign m_axi_wdata[28] = \<const0> ;
+  assign m_axi_wdata[27] = \<const0> ;
+  assign m_axi_wdata[26] = \<const0> ;
+  assign m_axi_wdata[25] = \<const0> ;
+  assign m_axi_wdata[24] = \<const0> ;
+  assign m_axi_wdata[23] = \<const0> ;
+  assign m_axi_wdata[22] = \<const0> ;
+  assign m_axi_wdata[21] = \<const0> ;
+  assign m_axi_wdata[20] = \<const0> ;
+  assign m_axi_wdata[19] = \<const0> ;
+  assign m_axi_wdata[18] = \<const0> ;
+  assign m_axi_wdata[17] = \<const0> ;
+  assign m_axi_wdata[16] = \<const0> ;
+  assign m_axi_wdata[15] = \<const0> ;
+  assign m_axi_wdata[14] = \<const0> ;
+  assign m_axi_wdata[13] = \<const0> ;
+  assign m_axi_wdata[12] = \<const0> ;
+  assign m_axi_wdata[11] = \<const0> ;
+  assign m_axi_wdata[10] = \<const0> ;
+  assign m_axi_wdata[9] = \<const0> ;
+  assign m_axi_wdata[8] = \<const0> ;
+  assign m_axi_wdata[7] = \<const0> ;
+  assign m_axi_wdata[6] = \<const0> ;
+  assign m_axi_wdata[5] = \<const0> ;
+  assign m_axi_wdata[4] = \<const0> ;
+  assign m_axi_wdata[3] = \<const0> ;
+  assign m_axi_wdata[2] = \<const0> ;
+  assign m_axi_wdata[1] = \<const0> ;
+  assign m_axi_wdata[0] = \<const0> ;
+  assign m_axi_wstrb[3] = \<const0> ;
+  assign m_axi_wstrb[2] = \<const0> ;
+  assign m_axi_wstrb[1] = \<const0> ;
+  assign m_axi_wstrb[0] = \<const0> ;
+  assign m_axi_wvalid = \<const0> ;
   assign s00_axi_bresp[1] = \<const0> ;
   assign s00_axi_bresp[0] = \<const0> ;
   assign s00_axi_rresp[1] = \<const0> ;
@@ -174,6 +348,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* AD1_CLOCKS_BEFORE_DATA = "60" *) 
   (* AD1_CLOCKS_BETWEEN_TRANSACTIONS = "400" *) 
   (* AD1_CLOCKS_PER_BIT = "20" *) 
+  (* C_M_AXI_ADDR_WIDTH = "32" *) 
+  (* C_M_AXI_DATA_WIDTH = "32" *) 
+  (* C_M_AXI_START_DATA_VALUE = "-1442840576" *) 
+  (* C_M_AXI_TARGET_SLAVE_BASE_ADDR = "1073741824" *) 
+  (* C_M_AXI_TRANSACTIONS_NUM = "4" *) 
   (* C_S00_AXI_ADDR_WIDTH = "4" *) 
   (* C_S00_AXI_DATA_WIDTH = "32" *) 
   (* INCLUDE_DEBUG_INTERFACE = "1'b0" *) 
@@ -203,6 +382,30 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
         .Pmod_out_pin9_o(NLW_inst_Pmod_out_pin9_o_UNCONNECTED),
         .Pmod_out_pin9_t(NLW_inst_Pmod_out_pin9_t_UNCONNECTED),
         .led(NLW_inst_led_UNCONNECTED[1:0]),
+        .m_axi_aclk(1'b0),
+        .m_axi_araddr(NLW_inst_m_axi_araddr_UNCONNECTED[31:0]),
+        .m_axi_aresetn(1'b0),
+        .m_axi_arprot(NLW_inst_m_axi_arprot_UNCONNECTED[2:0]),
+        .m_axi_arready(1'b0),
+        .m_axi_arvalid(NLW_inst_m_axi_arvalid_UNCONNECTED),
+        .m_axi_awaddr(NLW_inst_m_axi_awaddr_UNCONNECTED[31:0]),
+        .m_axi_awprot(NLW_inst_m_axi_awprot_UNCONNECTED[2:0]),
+        .m_axi_awready(1'b0),
+        .m_axi_awvalid(NLW_inst_m_axi_awvalid_UNCONNECTED),
+        .m_axi_bready(NLW_inst_m_axi_bready_UNCONNECTED),
+        .m_axi_bresp({1'b0,1'b0}),
+        .m_axi_bvalid(1'b0),
+        .m_axi_error(NLW_inst_m_axi_error_UNCONNECTED),
+        .m_axi_init_axi_txn(1'b0),
+        .m_axi_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .m_axi_rready(NLW_inst_m_axi_rready_UNCONNECTED),
+        .m_axi_rresp({1'b0,1'b0}),
+        .m_axi_rvalid(1'b0),
+        .m_axi_txn_done(NLW_inst_m_axi_txn_done_UNCONNECTED),
+        .m_axi_wdata(NLW_inst_m_axi_wdata_UNCONNECTED[31:0]),
+        .m_axi_wready(1'b0),
+        .m_axi_wstrb(NLW_inst_m_axi_wstrb_UNCONNECTED[3:0]),
+        .m_axi_wvalid(NLW_inst_m_axi_wvalid_UNCONNECTED),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_araddr({s00_axi_araddr[3:2],1'b0,1'b0}),
         .s00_axi_aresetn(s00_axi_aresetn),
@@ -227,8 +430,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
 endmodule
 
 (* AD1_CLOCKS_AFTER_DATA = "500" *) (* AD1_CLOCKS_BEFORE_DATA = "60" *) (* AD1_CLOCKS_BETWEEN_TRANSACTIONS = "400" *) 
-(* AD1_CLOCKS_PER_BIT = "20" *) (* C_S00_AXI_ADDR_WIDTH = "4" *) (* C_S00_AXI_DATA_WIDTH = "32" *) 
-(* INCLUDE_DEBUG_INTERFACE = "1'b0" *) 
+(* AD1_CLOCKS_PER_BIT = "20" *) (* C_M_AXI_ADDR_WIDTH = "32" *) (* C_M_AXI_DATA_WIDTH = "32" *) 
+(* C_M_AXI_START_DATA_VALUE = "-1442840576" *) (* C_M_AXI_TARGET_SLAVE_BASE_ADDR = "1073741824" *) (* C_M_AXI_TRANSACTIONS_NUM = "4" *) 
+(* C_S00_AXI_ADDR_WIDTH = "4" *) (* C_S00_AXI_DATA_WIDTH = "32" *) (* INCLUDE_DEBUG_INTERFACE = "1'b0" *) 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PmodAD1_v1_0
    (Pmod_out_pin10_i,
     Pmod_out_pin10_o,
@@ -275,7 +479,31 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PmodAD1_v1_0
     s00_axi_rdata,
     s00_axi_rresp,
     s00_axi_rvalid,
-    s00_axi_rready);
+    s00_axi_rready,
+    m_axi_init_axi_txn,
+    m_axi_error,
+    m_axi_txn_done,
+    m_axi_aclk,
+    m_axi_aresetn,
+    m_axi_awaddr,
+    m_axi_awprot,
+    m_axi_awvalid,
+    m_axi_awready,
+    m_axi_wdata,
+    m_axi_wstrb,
+    m_axi_wvalid,
+    m_axi_wready,
+    m_axi_bresp,
+    m_axi_bvalid,
+    m_axi_bready,
+    m_axi_araddr,
+    m_axi_arprot,
+    m_axi_arvalid,
+    m_axi_arready,
+    m_axi_rdata,
+    m_axi_rresp,
+    m_axi_rvalid,
+    m_axi_rready);
   input Pmod_out_pin10_i;
   output Pmod_out_pin10_o;
   output Pmod_out_pin10_t;
@@ -322,6 +550,30 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PmodAD1_v1_0
   output [1:0]s00_axi_rresp;
   output s00_axi_rvalid;
   input s00_axi_rready;
+  input m_axi_init_axi_txn;
+  output m_axi_error;
+  output m_axi_txn_done;
+  input m_axi_aclk;
+  input m_axi_aresetn;
+  output [31:0]m_axi_awaddr;
+  output [2:0]m_axi_awprot;
+  output m_axi_awvalid;
+  input m_axi_awready;
+  output [31:0]m_axi_wdata;
+  output [3:0]m_axi_wstrb;
+  output m_axi_wvalid;
+  input m_axi_wready;
+  input [1:0]m_axi_bresp;
+  input m_axi_bvalid;
+  output m_axi_bready;
+  output [31:0]m_axi_araddr;
+  output [2:0]m_axi_arprot;
+  output m_axi_arvalid;
+  input m_axi_arready;
+  input [31:0]m_axi_rdata;
+  input [1:0]m_axi_rresp;
+  input m_axi_rvalid;
+  output m_axi_rready;
 
   wire \<const0> ;
   wire Pmod_out_pin1_o;
@@ -382,6 +634,119 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PmodAD1_v1_0
   assign Pmod_out_pin9_t = \<const0> ;
   assign led[1] = \<const0> ;
   assign led[0] = \<const0> ;
+  assign m_axi_araddr[31] = \<const0> ;
+  assign m_axi_araddr[30] = \<const0> ;
+  assign m_axi_araddr[29] = \<const0> ;
+  assign m_axi_araddr[28] = \<const0> ;
+  assign m_axi_araddr[27] = \<const0> ;
+  assign m_axi_araddr[26] = \<const0> ;
+  assign m_axi_araddr[25] = \<const0> ;
+  assign m_axi_araddr[24] = \<const0> ;
+  assign m_axi_araddr[23] = \<const0> ;
+  assign m_axi_araddr[22] = \<const0> ;
+  assign m_axi_araddr[21] = \<const0> ;
+  assign m_axi_araddr[20] = \<const0> ;
+  assign m_axi_araddr[19] = \<const0> ;
+  assign m_axi_araddr[18] = \<const0> ;
+  assign m_axi_araddr[17] = \<const0> ;
+  assign m_axi_araddr[16] = \<const0> ;
+  assign m_axi_araddr[15] = \<const0> ;
+  assign m_axi_araddr[14] = \<const0> ;
+  assign m_axi_araddr[13] = \<const0> ;
+  assign m_axi_araddr[12] = \<const0> ;
+  assign m_axi_araddr[11] = \<const0> ;
+  assign m_axi_araddr[10] = \<const0> ;
+  assign m_axi_araddr[9] = \<const0> ;
+  assign m_axi_araddr[8] = \<const0> ;
+  assign m_axi_araddr[7] = \<const0> ;
+  assign m_axi_araddr[6] = \<const0> ;
+  assign m_axi_araddr[5] = \<const0> ;
+  assign m_axi_araddr[4] = \<const0> ;
+  assign m_axi_araddr[3] = \<const0> ;
+  assign m_axi_araddr[2] = \<const0> ;
+  assign m_axi_araddr[1] = \<const0> ;
+  assign m_axi_araddr[0] = \<const0> ;
+  assign m_axi_arprot[2] = \<const0> ;
+  assign m_axi_arprot[1] = \<const0> ;
+  assign m_axi_arprot[0] = \<const0> ;
+  assign m_axi_arvalid = \<const0> ;
+  assign m_axi_awaddr[31] = \<const0> ;
+  assign m_axi_awaddr[30] = \<const0> ;
+  assign m_axi_awaddr[29] = \<const0> ;
+  assign m_axi_awaddr[28] = \<const0> ;
+  assign m_axi_awaddr[27] = \<const0> ;
+  assign m_axi_awaddr[26] = \<const0> ;
+  assign m_axi_awaddr[25] = \<const0> ;
+  assign m_axi_awaddr[24] = \<const0> ;
+  assign m_axi_awaddr[23] = \<const0> ;
+  assign m_axi_awaddr[22] = \<const0> ;
+  assign m_axi_awaddr[21] = \<const0> ;
+  assign m_axi_awaddr[20] = \<const0> ;
+  assign m_axi_awaddr[19] = \<const0> ;
+  assign m_axi_awaddr[18] = \<const0> ;
+  assign m_axi_awaddr[17] = \<const0> ;
+  assign m_axi_awaddr[16] = \<const0> ;
+  assign m_axi_awaddr[15] = \<const0> ;
+  assign m_axi_awaddr[14] = \<const0> ;
+  assign m_axi_awaddr[13] = \<const0> ;
+  assign m_axi_awaddr[12] = \<const0> ;
+  assign m_axi_awaddr[11] = \<const0> ;
+  assign m_axi_awaddr[10] = \<const0> ;
+  assign m_axi_awaddr[9] = \<const0> ;
+  assign m_axi_awaddr[8] = \<const0> ;
+  assign m_axi_awaddr[7] = \<const0> ;
+  assign m_axi_awaddr[6] = \<const0> ;
+  assign m_axi_awaddr[5] = \<const0> ;
+  assign m_axi_awaddr[4] = \<const0> ;
+  assign m_axi_awaddr[3] = \<const0> ;
+  assign m_axi_awaddr[2] = \<const0> ;
+  assign m_axi_awaddr[1] = \<const0> ;
+  assign m_axi_awaddr[0] = \<const0> ;
+  assign m_axi_awprot[2] = \<const0> ;
+  assign m_axi_awprot[1] = \<const0> ;
+  assign m_axi_awprot[0] = \<const0> ;
+  assign m_axi_awvalid = \<const0> ;
+  assign m_axi_bready = \<const0> ;
+  assign m_axi_error = \<const0> ;
+  assign m_axi_rready = \<const0> ;
+  assign m_axi_txn_done = \<const0> ;
+  assign m_axi_wdata[31] = \<const0> ;
+  assign m_axi_wdata[30] = \<const0> ;
+  assign m_axi_wdata[29] = \<const0> ;
+  assign m_axi_wdata[28] = \<const0> ;
+  assign m_axi_wdata[27] = \<const0> ;
+  assign m_axi_wdata[26] = \<const0> ;
+  assign m_axi_wdata[25] = \<const0> ;
+  assign m_axi_wdata[24] = \<const0> ;
+  assign m_axi_wdata[23] = \<const0> ;
+  assign m_axi_wdata[22] = \<const0> ;
+  assign m_axi_wdata[21] = \<const0> ;
+  assign m_axi_wdata[20] = \<const0> ;
+  assign m_axi_wdata[19] = \<const0> ;
+  assign m_axi_wdata[18] = \<const0> ;
+  assign m_axi_wdata[17] = \<const0> ;
+  assign m_axi_wdata[16] = \<const0> ;
+  assign m_axi_wdata[15] = \<const0> ;
+  assign m_axi_wdata[14] = \<const0> ;
+  assign m_axi_wdata[13] = \<const0> ;
+  assign m_axi_wdata[12] = \<const0> ;
+  assign m_axi_wdata[11] = \<const0> ;
+  assign m_axi_wdata[10] = \<const0> ;
+  assign m_axi_wdata[9] = \<const0> ;
+  assign m_axi_wdata[8] = \<const0> ;
+  assign m_axi_wdata[7] = \<const0> ;
+  assign m_axi_wdata[6] = \<const0> ;
+  assign m_axi_wdata[5] = \<const0> ;
+  assign m_axi_wdata[4] = \<const0> ;
+  assign m_axi_wdata[3] = \<const0> ;
+  assign m_axi_wdata[2] = \<const0> ;
+  assign m_axi_wdata[1] = \<const0> ;
+  assign m_axi_wdata[0] = \<const0> ;
+  assign m_axi_wstrb[3] = \<const0> ;
+  assign m_axi_wstrb[2] = \<const0> ;
+  assign m_axi_wstrb[1] = \<const0> ;
+  assign m_axi_wstrb[0] = \<const0> ;
+  assign m_axi_wvalid = \<const0> ;
   assign s00_axi_bresp[1] = \<const0> ;
   assign s00_axi_bresp[0] = \<const0> ;
   assign s00_axi_rresp[1] = \<const0> ;

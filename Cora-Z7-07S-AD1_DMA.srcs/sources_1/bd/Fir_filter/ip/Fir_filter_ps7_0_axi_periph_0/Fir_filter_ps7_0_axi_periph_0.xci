@@ -8,7 +8,7 @@
     "gen_directory": "../../../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_ps7_0_axi_periph_0",
     "parameters": {
       "component_parameters": {
-        "NUM_SI": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "NUM_SI": [ { "value": "2", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "NUM_MI": [ { "value": "2", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "STRATEGY": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "ENABLE_ADVANCED_OPTIONS": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],

@@ -3,8 +3,8 @@
 # SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
 # IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
 # SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-# Start of session at: Thu Nov  7 09:51:55 2024
-# Process ID: 12948
+# Start of session at: Thu Nov  7 11:10:47 2024
+# Process ID: 21980
 # Current directory: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/Fir_filter_xbar_1_synth_1
 # Command line: vivado.exe -log Fir_filter_xbar_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fir_filter_xbar_1.tcl
 # Log file: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/Fir_filter_xbar_1_synth_1/Fir_filter_xbar_1.vds
@@ -19,6 +19,6 @@
 # Host memory       :34124 MB
 # Swap memory       :2147 MB
 # Total Virtual     :36272 MB
-# Available Virtual :14325 MB
+# Available Virtual :21949 MB
 #-----------------------------------------------------------
 source Fir_filter_xbar_1.tcl -notrace

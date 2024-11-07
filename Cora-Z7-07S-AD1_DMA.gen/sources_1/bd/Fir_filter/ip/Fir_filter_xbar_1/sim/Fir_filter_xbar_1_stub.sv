@@ -68,25 +68,25 @@ typedef bit bit_as_bool;
 module Fir_filter_xbar_1 (
   input bit_as_bool aclk,
   input bit_as_bool aresetn,
-  input bit [31 : 0] s_axi_awaddr,
-  input bit [2 : 0] s_axi_awprot,
-  input bit [0 : 0] s_axi_awvalid,
-  output bit [0 : 0] s_axi_awready,
-  input bit [31 : 0] s_axi_wdata,
-  input bit [3 : 0] s_axi_wstrb,
-  input bit [0 : 0] s_axi_wvalid,
-  output bit [0 : 0] s_axi_wready,
-  output bit [1 : 0] s_axi_bresp,
-  output bit [0 : 0] s_axi_bvalid,
-  input bit [0 : 0] s_axi_bready,
-  input bit [31 : 0] s_axi_araddr,
-  input bit [2 : 0] s_axi_arprot,
-  input bit [0 : 0] s_axi_arvalid,
-  output bit [0 : 0] s_axi_arready,
-  output bit [31 : 0] s_axi_rdata,
-  output bit [1 : 0] s_axi_rresp,
-  output bit [0 : 0] s_axi_rvalid,
-  input bit [0 : 0] s_axi_rready,
+  input bit [63 : 0] s_axi_awaddr,
+  input bit [5 : 0] s_axi_awprot,
+  input bit [1 : 0] s_axi_awvalid,
+  output bit [1 : 0] s_axi_awready,
+  input bit [63 : 0] s_axi_wdata,
+  input bit [7 : 0] s_axi_wstrb,
+  input bit [1 : 0] s_axi_wvalid,
+  output bit [1 : 0] s_axi_wready,
+  output bit [3 : 0] s_axi_bresp,
+  output bit [1 : 0] s_axi_bvalid,
+  input bit [1 : 0] s_axi_bready,
+  input bit [63 : 0] s_axi_araddr,
+  input bit [5 : 0] s_axi_arprot,
+  input bit [1 : 0] s_axi_arvalid,
+  output bit [1 : 0] s_axi_arready,
+  output bit [63 : 0] s_axi_rdata,
+  output bit [3 : 0] s_axi_rresp,
+  output bit [1 : 0] s_axi_rvalid,
+  input bit [1 : 0] s_axi_rready,
   output bit [63 : 0] m_axi_awaddr,
   output bit [5 : 0] m_axi_awprot,
   output bit [1 : 0] m_axi_awvalid,
@@ -117,25 +117,25 @@ module Fir_filter_xbar_1 (aclk,aresetn,s_axi_awaddr,s_axi_awprot,s_axi_awvalid,s
 *);
   input bit aclk;
   input bit aresetn;
-  input bit [31 : 0] s_axi_awaddr;
-  input bit [2 : 0] s_axi_awprot;
-  input bit [0 : 0] s_axi_awvalid;
-  output wire [0 : 0] s_axi_awready;
-  input bit [31 : 0] s_axi_wdata;
-  input bit [3 : 0] s_axi_wstrb;
-  input bit [0 : 0] s_axi_wvalid;
-  output wire [0 : 0] s_axi_wready;
-  output wire [1 : 0] s_axi_bresp;
-  output wire [0 : 0] s_axi_bvalid;
-  input bit [0 : 0] s_axi_bready;
-  input bit [31 : 0] s_axi_araddr;
-  input bit [2 : 0] s_axi_arprot;
-  input bit [0 : 0] s_axi_arvalid;
-  output wire [0 : 0] s_axi_arready;
-  output wire [31 : 0] s_axi_rdata;
-  output wire [1 : 0] s_axi_rresp;
-  output wire [0 : 0] s_axi_rvalid;
-  input bit [0 : 0] s_axi_rready;
+  input bit [63 : 0] s_axi_awaddr;
+  input bit [5 : 0] s_axi_awprot;
+  input bit [1 : 0] s_axi_awvalid;
+  output wire [1 : 0] s_axi_awready;
+  input bit [63 : 0] s_axi_wdata;
+  input bit [7 : 0] s_axi_wstrb;
+  input bit [1 : 0] s_axi_wvalid;
+  output wire [1 : 0] s_axi_wready;
+  output wire [3 : 0] s_axi_bresp;
+  output wire [1 : 0] s_axi_bvalid;
+  input bit [1 : 0] s_axi_bready;
+  input bit [63 : 0] s_axi_araddr;
+  input bit [5 : 0] s_axi_arprot;
+  input bit [1 : 0] s_axi_arvalid;
+  output wire [1 : 0] s_axi_arready;
+  output wire [63 : 0] s_axi_rdata;
+  output wire [3 : 0] s_axi_rresp;
+  output wire [1 : 0] s_axi_rvalid;
+  input bit [1 : 0] s_axi_rready;
   output wire [63 : 0] m_axi_awaddr;
   output wire [5 : 0] m_axi_awprot;
   output wire [1 : 0] m_axi_awvalid;

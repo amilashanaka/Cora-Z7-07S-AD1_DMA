@@ -1,0 +1,386 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov  7 11:08:34 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fir_filter_PmodAD1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Fir_filter_PmodAD1_0_0 (spicerconsulting:IP:AD1DMA:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov  7 10:57:18 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fir_filter_PmodAD1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Fir_filter_PmodAD1_0_0 (spicerconsulting:IP:AD1DMA:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov  7 10:49:43 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fir_filter_PmodAD1_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Fir_filter_PmodAD1_0_0 (spicerconsulting:IP:AD1DMA:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Fir_filter_PmodAD1_0_0'.
+
+
+-Upgrade has removed interface 'm00_axi'
+
+-Upgrade has added interface 'm_axi' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Fir_filter_PmodAD1_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm00_axi_aclk'
+
+-Upgrade has removed port 'm00_axi_araddr'
+
+-Upgrade has removed port 'm00_axi_aresetn'
+
+-Upgrade has removed port 'm00_axi_arprot'
+
+-Upgrade has removed port 'm00_axi_arready'
+
+-Upgrade has removed port 'm00_axi_arvalid'
+
+-Upgrade has removed port 'm00_axi_awaddr'
+
+-Upgrade has removed port 'm00_axi_awprot'
+
+-Upgrade has removed port 'm00_axi_awready'
+
+-Upgrade has removed port 'm00_axi_awvalid'
+
+-Upgrade has removed port 'm00_axi_bready'
+
+-Upgrade has removed port 'm00_axi_bresp'
+
+-Upgrade has removed port 'm00_axi_bvalid'
+
+-Upgrade has removed port 'm00_axi_error'
+
+-Upgrade has removed port 'm00_axi_init_axi_txn'
+
+-Upgrade has removed port 'm00_axi_rdata'
+
+-Upgrade has removed port 'm00_axi_rready'
+
+-Upgrade has removed port 'm00_axi_rresp'
+
+-Upgrade has removed port 'm00_axi_rvalid'
+
+-Upgrade has removed port 'm00_axi_txn_done'
+
+-Upgrade has removed port 'm00_axi_wdata'
+
+-Upgrade has removed port 'm00_axi_wready'
+
+-Upgrade has removed port 'm00_axi_wstrb'
+
+-Upgrade has removed port 'm00_axi_wvalid'
+
+-Upgrade has added port 'm_axi_aclk'
+
+-Upgrade has added port 'm_axi_araddr'
+
+-Upgrade has added port 'm_axi_aresetn'
+
+-Upgrade has added port 'm_axi_arprot'
+
+-Upgrade has added port 'm_axi_arready'
+
+-Upgrade has added port 'm_axi_arvalid'
+
+-Upgrade has added port 'm_axi_awaddr'
+
+-Upgrade has added port 'm_axi_awprot'
+
+-Upgrade has added port 'm_axi_awready'
+
+-Upgrade has added port 'm_axi_awvalid'
+
+-Upgrade has added port 'm_axi_bready'
+
+-Upgrade has added port 'm_axi_bresp'
+
+-Upgrade has added port 'm_axi_bvalid'
+
+-Upgrade has added port 'm_axi_error'
+
+-Upgrade has added port 'm_axi_init_axi_txn'
+
+-Upgrade has added port 'm_axi_rdata'
+
+-Upgrade has added port 'm_axi_rready'
+
+-Upgrade has added port 'm_axi_rresp'
+
+-Upgrade has added port 'm_axi_rvalid'
+
+-Upgrade has added port 'm_axi_txn_done'
+
+-Upgrade has added port 'm_axi_wdata'
+
+-Upgrade has added port 'm_axi_wready'
+
+-Upgrade has added port 'm_axi_wstrb'
+
+-Upgrade has added port 'm_axi_wvalid'
+
+
+4. Customization warnings
+-------------------------
+
+Parameter 'C_M00_AXI_START_DATA_VALUE' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '0xAA000000'
+
+Parameter 'C_M00_AXI_TARGET_SLAVE_BASE_ADDR' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '0x40000000'
+
+Parameter 'C_M00_AXI_ADDR_WIDTH' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '32'
+
+Parameter 'C_M00_AXI_DATA_WIDTH' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '32'
+
+Parameter 'C_M00_AXI_TRANSACTIONS_NUM' is no longer present on the upgraded IP 'Fir_filter_PmodAD1_0_0', and cannot be set to '4'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv spicerconsulting:IP:AD1DMA:1.0 -user_name Fir_filter_PmodAD1_0_0
+set_property -dict "\
+  CONFIG.AD1_CLOCKS_AFTER_DATA {500} \
+  CONFIG.AD1_CLOCKS_BEFORE_DATA {60} \
+  CONFIG.AD1_CLOCKS_BETWEEN_TRANSACTIONS {400} \
+  CONFIG.AD1_CLOCKS_PER_BIT {20} \
+  CONFIG.AXI_LITE_SAMPLE.ADDR_WIDTH {4} \
+  CONFIG.AXI_LITE_SAMPLE.ARUSER_WIDTH {0} \
+  CONFIG.AXI_LITE_SAMPLE.AWUSER_WIDTH {0} \
+  CONFIG.AXI_LITE_SAMPLE.BUSER_WIDTH {0} \
+  CONFIG.AXI_LITE_SAMPLE.CLK_DOMAIN {Fir_filter_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.AXI_LITE_SAMPLE.DATA_WIDTH {32} \
+  CONFIG.AXI_LITE_SAMPLE.FREQ_HZ {50000000} \
+  CONFIG.AXI_LITE_SAMPLE.HAS_BRESP {1} \
+  CONFIG.AXI_LITE_SAMPLE.HAS_BURST {0} \
+  CONFIG.AXI_LITE_SAMPLE.HAS_CACHE {0} \
+  CONFIG.AXI_LITE_SAMPLE.HAS_LOCK {0} \
+  CONFIG.AXI_LITE_SAMPLE.HAS_PROT {1} \
+  CONFIG.AXI_LITE_SAMPLE.HAS_QOS {0} \
+  CONFIG.AXI_LITE_SAMPLE.HAS_REGION {0} \
+  CONFIG.AXI_LITE_SAMPLE.HAS_RRESP {1} \
+  CONFIG.AXI_LITE_SAMPLE.HAS_WSTRB {1} \
+  CONFIG.AXI_LITE_SAMPLE.ID_WIDTH {0} \
+  CONFIG.AXI_LITE_SAMPLE.INSERT_VIP {0} \
+  CONFIG.AXI_LITE_SAMPLE.MAX_BURST_LENGTH {1} \
+  CONFIG.AXI_LITE_SAMPLE.NUM_READ_OUTSTANDING {1} \
+  CONFIG.AXI_LITE_SAMPLE.NUM_READ_THREADS {1} \
+  CONFIG.AXI_LITE_SAMPLE.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.AXI_LITE_SAMPLE.NUM_WRITE_THREADS {1} \
+  CONFIG.AXI_LITE_SAMPLE.PHASE {0.0} \
+  CONFIG.AXI_LITE_SAMPLE.PROTOCOL {AXI4LITE} \
+  CONFIG.AXI_LITE_SAMPLE.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.AXI_LITE_SAMPLE.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI_LITE_SAMPLE.RUSER_WIDTH {0} \
+  CONFIG.AXI_LITE_SAMPLE.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.AXI_LITE_SAMPLE.WIZ_DATA_WIDTH {32} \
+  CONFIG.AXI_LITE_SAMPLE.WIZ_NUM_REG {4} \
+  CONFIG.AXI_LITE_SAMPLE.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI_LITE_SAMPLE.WUSER_WIDTH {0} \
+  CONFIG.AXI_LITE_SAMPLE_BASEADDR {0xFFFFFFFF} \
+  CONFIG.AXI_LITE_SAMPLE_CLK.ASSOCIATED_BUSIF {AXI_LITE_SAMPLE} \
+  CONFIG.AXI_LITE_SAMPLE_CLK.ASSOCIATED_PORT {} \
+  CONFIG.AXI_LITE_SAMPLE_CLK.ASSOCIATED_RESET {s00_axi_aresetn} \
+  CONFIG.AXI_LITE_SAMPLE_CLK.CLK_DOMAIN {Fir_filter_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.AXI_LITE_SAMPLE_CLK.FREQ_HZ {50000000} \
+  CONFIG.AXI_LITE_SAMPLE_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.AXI_LITE_SAMPLE_CLK.INSERT_VIP {0} \
+  CONFIG.AXI_LITE_SAMPLE_CLK.PHASE {0.0} \
+  CONFIG.AXI_LITE_SAMPLE_HIGHADDR {0x00000000} \
+  CONFIG.AXI_LITE_SAMPLE_RST.INSERT_VIP {0} \
+  CONFIG.AXI_LITE_SAMPLE_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.C_S00_AXI_ADDR_WIDTH {4} \
+  CONFIG.C_S00_AXI_DATA_WIDTH {32} \
+  CONFIG.Component_Name {Fir_filter_PmodAD1_0_0} \
+  CONFIG.INCLUDE_DEBUG_INTERFACE {false} \
+  CONFIG.PMOD {ja} \
+  CONFIG.Pmod_out.BOARD.ASSOCIATED_PARAM {PMOD} \
+  CONFIG.USE_BOARD_FLOW {true} " [get_ips Fir_filter_PmodAD1_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov  7 10:28:32 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fir_filter_PmodAD1_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Fir_filter_PmodAD1_0_0 (spicerconsulting:IP:AD1DMA:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Fir_filter_PmodAD1_0_0'.
+
+
+-Upgrade has added interface 'm00_axi' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Fir_filter_PmodAD1_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'm00_axi_aclk'
+
+-Upgrade has added port 'm00_axi_araddr'
+
+-Upgrade has added port 'm00_axi_aresetn'
+
+-Upgrade has added port 'm00_axi_arprot'
+
+-Upgrade has added port 'm00_axi_arready'
+
+-Upgrade has added port 'm00_axi_arvalid'
+
+-Upgrade has added port 'm00_axi_awaddr'
+
+-Upgrade has added port 'm00_axi_awprot'
+
+-Upgrade has added port 'm00_axi_awready'
+
+-Upgrade has added port 'm00_axi_awvalid'
+
+-Upgrade has added port 'm00_axi_bready'
+
+-Upgrade has added port 'm00_axi_bresp'
+
+-Upgrade has added port 'm00_axi_bvalid'
+
+-Upgrade has added port 'm00_axi_error'
+
+-Upgrade has added port 'm00_axi_init_axi_txn'
+
+-Upgrade has added port 'm00_axi_rdata'
+
+-Upgrade has added port 'm00_axi_rready'
+
+-Upgrade has added port 'm00_axi_rresp'
+
+-Upgrade has added port 'm00_axi_rvalid'
+
+-Upgrade has added port 'm00_axi_txn_done'
+
+-Upgrade has added port 'm00_axi_wdata'
+
+-Upgrade has added port 'm00_axi_wready'
+
+-Upgrade has added port 'm00_axi_wstrb'
+
+-Upgrade has added port 'm00_axi_wvalid'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov  7 10:17:49 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fir_filter_PmodAD1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of Fir_filter_PmodAD1_0_0 (spicerconsulting:IP:AD1DMA:1.0 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov  7 10:16:58 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fir_filter_PmodAD1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Fir_filter_PmodAD1_0_0 from digilentinc.com:IP:PmodAD1:1.0 (Rev. 31) to spicerconsulting:IP:AD1DMA:1.0 (Rev. 1)
+

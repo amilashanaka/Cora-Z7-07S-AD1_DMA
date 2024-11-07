@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-// Date        : Thu Nov  7 09:52:51 2024
+// Date        : Thu Nov  7 11:11:37 2024
 // Host        : DonGun running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_xbar_1/Fir_filter_xbar_1_stub.v
@@ -22,29 +22,29 @@ module Fir_filter_xbar_1(aclk, aresetn, s_axi_awaddr, s_axi_awprot,
   m_axi_awprot, m_axi_awvalid, m_axi_awready, m_axi_wdata, m_axi_wstrb, m_axi_wvalid, 
   m_axi_wready, m_axi_bresp, m_axi_bvalid, m_axi_bready, m_axi_araddr, m_axi_arprot, 
   m_axi_arvalid, m_axi_arready, m_axi_rdata, m_axi_rresp, m_axi_rvalid, m_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="aresetn,s_axi_awaddr[31:0],s_axi_awprot[2:0],s_axi_awvalid[0:0],s_axi_awready[0:0],s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid[0:0],s_axi_wready[0:0],s_axi_bresp[1:0],s_axi_bvalid[0:0],s_axi_bready[0:0],s_axi_araddr[31:0],s_axi_arprot[2:0],s_axi_arvalid[0:0],s_axi_arready[0:0],s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid[0:0],s_axi_rready[0:0],m_axi_awaddr[63:0],m_axi_awprot[5:0],m_axi_awvalid[1:0],m_axi_awready[1:0],m_axi_wdata[63:0],m_axi_wstrb[7:0],m_axi_wvalid[1:0],m_axi_wready[1:0],m_axi_bresp[3:0],m_axi_bvalid[1:0],m_axi_bready[1:0],m_axi_araddr[63:0],m_axi_arprot[5:0],m_axi_arvalid[1:0],m_axi_arready[1:0],m_axi_rdata[63:0],m_axi_rresp[3:0],m_axi_rvalid[1:0],m_axi_rready[1:0]" */
+/* synthesis syn_black_box black_box_pad_pin="aresetn,s_axi_awaddr[63:0],s_axi_awprot[5:0],s_axi_awvalid[1:0],s_axi_awready[1:0],s_axi_wdata[63:0],s_axi_wstrb[7:0],s_axi_wvalid[1:0],s_axi_wready[1:0],s_axi_bresp[3:0],s_axi_bvalid[1:0],s_axi_bready[1:0],s_axi_araddr[63:0],s_axi_arprot[5:0],s_axi_arvalid[1:0],s_axi_arready[1:0],s_axi_rdata[63:0],s_axi_rresp[3:0],s_axi_rvalid[1:0],s_axi_rready[1:0],m_axi_awaddr[63:0],m_axi_awprot[5:0],m_axi_awvalid[1:0],m_axi_awready[1:0],m_axi_wdata[63:0],m_axi_wstrb[7:0],m_axi_wvalid[1:0],m_axi_wready[1:0],m_axi_bresp[3:0],m_axi_bvalid[1:0],m_axi_bready[1:0],m_axi_araddr[63:0],m_axi_arprot[5:0],m_axi_arvalid[1:0],m_axi_arready[1:0],m_axi_rdata[63:0],m_axi_rresp[3:0],m_axi_rvalid[1:0],m_axi_rready[1:0]" */
 /* synthesis syn_force_seq_prim="aclk" */;
   input aclk /* synthesis syn_isclock = 1 */;
   input aresetn;
-  input [31:0]s_axi_awaddr;
-  input [2:0]s_axi_awprot;
-  input [0:0]s_axi_awvalid;
-  output [0:0]s_axi_awready;
-  input [31:0]s_axi_wdata;
-  input [3:0]s_axi_wstrb;
-  input [0:0]s_axi_wvalid;
-  output [0:0]s_axi_wready;
-  output [1:0]s_axi_bresp;
-  output [0:0]s_axi_bvalid;
-  input [0:0]s_axi_bready;
-  input [31:0]s_axi_araddr;
-  input [2:0]s_axi_arprot;
-  input [0:0]s_axi_arvalid;
-  output [0:0]s_axi_arready;
-  output [31:0]s_axi_rdata;
-  output [1:0]s_axi_rresp;
-  output [0:0]s_axi_rvalid;
-  input [0:0]s_axi_rready;
+  input [63:0]s_axi_awaddr;
+  input [5:0]s_axi_awprot;
+  input [1:0]s_axi_awvalid;
+  output [1:0]s_axi_awready;
+  input [63:0]s_axi_wdata;
+  input [7:0]s_axi_wstrb;
+  input [1:0]s_axi_wvalid;
+  output [1:0]s_axi_wready;
+  output [3:0]s_axi_bresp;
+  output [1:0]s_axi_bvalid;
+  input [1:0]s_axi_bready;
+  input [63:0]s_axi_araddr;
+  input [5:0]s_axi_arprot;
+  input [1:0]s_axi_arvalid;
+  output [1:0]s_axi_arready;
+  output [63:0]s_axi_rdata;
+  output [3:0]s_axi_rresp;
+  output [1:0]s_axi_rvalid;
+  input [1:0]s_axi_rready;
   output [63:0]m_axi_awaddr;
   output [5:0]m_axi_awprot;
   output [1:0]m_axi_awvalid;

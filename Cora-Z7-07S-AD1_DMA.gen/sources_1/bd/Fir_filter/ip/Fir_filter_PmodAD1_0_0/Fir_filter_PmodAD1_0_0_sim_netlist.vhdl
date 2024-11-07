@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
--- Date        : Thu Nov  7 09:53:37 2024
+-- Date        : Thu Nov  7 11:11:33 2024
 -- Host        : DonGun running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/Fir_filter_PmodAD1_0_0_sim_netlist.vhdl
@@ -6132,7 +6132,31 @@ entity Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 is
     s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC
+    s00_axi_rready : in STD_LOGIC;
+    m_axi_init_axi_txn : in STD_LOGIC;
+    m_axi_error : out STD_LOGIC;
+    m_axi_txn_done : out STD_LOGIC;
+    m_axi_aclk : in STD_LOGIC;
+    m_axi_aresetn : in STD_LOGIC;
+    m_axi_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_awvalid : out STD_LOGIC;
+    m_axi_awready : in STD_LOGIC;
+    m_axi_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_wvalid : out STD_LOGIC;
+    m_axi_wready : in STD_LOGIC;
+    m_axi_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_bvalid : in STD_LOGIC;
+    m_axi_bready : out STD_LOGIC;
+    m_axi_araddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_arprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_arvalid : out STD_LOGIC;
+    m_axi_arready : in STD_LOGIC;
+    m_axi_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_rvalid : in STD_LOGIC;
+    m_axi_rready : out STD_LOGIC
   );
   attribute AD1_CLOCKS_AFTER_DATA : integer;
   attribute AD1_CLOCKS_AFTER_DATA of Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 : entity is 500;
@@ -6142,6 +6166,16 @@ entity Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 is
   attribute AD1_CLOCKS_BETWEEN_TRANSACTIONS of Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 : entity is 400;
   attribute AD1_CLOCKS_PER_BIT : integer;
   attribute AD1_CLOCKS_PER_BIT of Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 : entity is 20;
+  attribute C_M_AXI_ADDR_WIDTH : integer;
+  attribute C_M_AXI_ADDR_WIDTH of Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 : entity is 32;
+  attribute C_M_AXI_DATA_WIDTH : integer;
+  attribute C_M_AXI_DATA_WIDTH of Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 : entity is 32;
+  attribute C_M_AXI_START_DATA_VALUE : integer;
+  attribute C_M_AXI_START_DATA_VALUE of Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 : entity is -1442840576;
+  attribute C_M_AXI_TARGET_SLAVE_BASE_ADDR : integer;
+  attribute C_M_AXI_TARGET_SLAVE_BASE_ADDR of Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 : entity is 1073741824;
+  attribute C_M_AXI_TRANSACTIONS_NUM : integer;
+  attribute C_M_AXI_TRANSACTIONS_NUM of Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 : entity is 4;
   attribute C_S00_AXI_ADDR_WIDTH : integer;
   attribute C_S00_AXI_ADDR_WIDTH of Fir_filter_PmodAD1_0_0_PmodAD1_v1_0 : entity is 4;
   attribute C_S00_AXI_DATA_WIDTH : integer;
@@ -6197,6 +6231,119 @@ begin
   Pmod_out_pin9_t <= \<const0>\;
   led(1) <= \<const0>\;
   led(0) <= \<const0>\;
+  m_axi_araddr(31) <= \<const0>\;
+  m_axi_araddr(30) <= \<const0>\;
+  m_axi_araddr(29) <= \<const0>\;
+  m_axi_araddr(28) <= \<const0>\;
+  m_axi_araddr(27) <= \<const0>\;
+  m_axi_araddr(26) <= \<const0>\;
+  m_axi_araddr(25) <= \<const0>\;
+  m_axi_araddr(24) <= \<const0>\;
+  m_axi_araddr(23) <= \<const0>\;
+  m_axi_araddr(22) <= \<const0>\;
+  m_axi_araddr(21) <= \<const0>\;
+  m_axi_araddr(20) <= \<const0>\;
+  m_axi_araddr(19) <= \<const0>\;
+  m_axi_araddr(18) <= \<const0>\;
+  m_axi_araddr(17) <= \<const0>\;
+  m_axi_araddr(16) <= \<const0>\;
+  m_axi_araddr(15) <= \<const0>\;
+  m_axi_araddr(14) <= \<const0>\;
+  m_axi_araddr(13) <= \<const0>\;
+  m_axi_araddr(12) <= \<const0>\;
+  m_axi_araddr(11) <= \<const0>\;
+  m_axi_araddr(10) <= \<const0>\;
+  m_axi_araddr(9) <= \<const0>\;
+  m_axi_araddr(8) <= \<const0>\;
+  m_axi_araddr(7) <= \<const0>\;
+  m_axi_araddr(6) <= \<const0>\;
+  m_axi_araddr(5) <= \<const0>\;
+  m_axi_araddr(4) <= \<const0>\;
+  m_axi_araddr(3) <= \<const0>\;
+  m_axi_araddr(2) <= \<const0>\;
+  m_axi_araddr(1) <= \<const0>\;
+  m_axi_araddr(0) <= \<const0>\;
+  m_axi_arprot(2) <= \<const0>\;
+  m_axi_arprot(1) <= \<const0>\;
+  m_axi_arprot(0) <= \<const0>\;
+  m_axi_arvalid <= \<const0>\;
+  m_axi_awaddr(31) <= \<const0>\;
+  m_axi_awaddr(30) <= \<const0>\;
+  m_axi_awaddr(29) <= \<const0>\;
+  m_axi_awaddr(28) <= \<const0>\;
+  m_axi_awaddr(27) <= \<const0>\;
+  m_axi_awaddr(26) <= \<const0>\;
+  m_axi_awaddr(25) <= \<const0>\;
+  m_axi_awaddr(24) <= \<const0>\;
+  m_axi_awaddr(23) <= \<const0>\;
+  m_axi_awaddr(22) <= \<const0>\;
+  m_axi_awaddr(21) <= \<const0>\;
+  m_axi_awaddr(20) <= \<const0>\;
+  m_axi_awaddr(19) <= \<const0>\;
+  m_axi_awaddr(18) <= \<const0>\;
+  m_axi_awaddr(17) <= \<const0>\;
+  m_axi_awaddr(16) <= \<const0>\;
+  m_axi_awaddr(15) <= \<const0>\;
+  m_axi_awaddr(14) <= \<const0>\;
+  m_axi_awaddr(13) <= \<const0>\;
+  m_axi_awaddr(12) <= \<const0>\;
+  m_axi_awaddr(11) <= \<const0>\;
+  m_axi_awaddr(10) <= \<const0>\;
+  m_axi_awaddr(9) <= \<const0>\;
+  m_axi_awaddr(8) <= \<const0>\;
+  m_axi_awaddr(7) <= \<const0>\;
+  m_axi_awaddr(6) <= \<const0>\;
+  m_axi_awaddr(5) <= \<const0>\;
+  m_axi_awaddr(4) <= \<const0>\;
+  m_axi_awaddr(3) <= \<const0>\;
+  m_axi_awaddr(2) <= \<const0>\;
+  m_axi_awaddr(1) <= \<const0>\;
+  m_axi_awaddr(0) <= \<const0>\;
+  m_axi_awprot(2) <= \<const0>\;
+  m_axi_awprot(1) <= \<const0>\;
+  m_axi_awprot(0) <= \<const0>\;
+  m_axi_awvalid <= \<const0>\;
+  m_axi_bready <= \<const0>\;
+  m_axi_error <= \<const0>\;
+  m_axi_rready <= \<const0>\;
+  m_axi_txn_done <= \<const0>\;
+  m_axi_wdata(31) <= \<const0>\;
+  m_axi_wdata(30) <= \<const0>\;
+  m_axi_wdata(29) <= \<const0>\;
+  m_axi_wdata(28) <= \<const0>\;
+  m_axi_wdata(27) <= \<const0>\;
+  m_axi_wdata(26) <= \<const0>\;
+  m_axi_wdata(25) <= \<const0>\;
+  m_axi_wdata(24) <= \<const0>\;
+  m_axi_wdata(23) <= \<const0>\;
+  m_axi_wdata(22) <= \<const0>\;
+  m_axi_wdata(21) <= \<const0>\;
+  m_axi_wdata(20) <= \<const0>\;
+  m_axi_wdata(19) <= \<const0>\;
+  m_axi_wdata(18) <= \<const0>\;
+  m_axi_wdata(17) <= \<const0>\;
+  m_axi_wdata(16) <= \<const0>\;
+  m_axi_wdata(15) <= \<const0>\;
+  m_axi_wdata(14) <= \<const0>\;
+  m_axi_wdata(13) <= \<const0>\;
+  m_axi_wdata(12) <= \<const0>\;
+  m_axi_wdata(11) <= \<const0>\;
+  m_axi_wdata(10) <= \<const0>\;
+  m_axi_wdata(9) <= \<const0>\;
+  m_axi_wdata(8) <= \<const0>\;
+  m_axi_wdata(7) <= \<const0>\;
+  m_axi_wdata(6) <= \<const0>\;
+  m_axi_wdata(5) <= \<const0>\;
+  m_axi_wdata(4) <= \<const0>\;
+  m_axi_wdata(3) <= \<const0>\;
+  m_axi_wdata(2) <= \<const0>\;
+  m_axi_wdata(1) <= \<const0>\;
+  m_axi_wdata(0) <= \<const0>\;
+  m_axi_wstrb(3) <= \<const0>\;
+  m_axi_wstrb(2) <= \<const0>\;
+  m_axi_wstrb(1) <= \<const0>\;
+  m_axi_wstrb(0) <= \<const0>\;
+  m_axi_wvalid <= \<const0>\;
   s00_axi_bresp(1) <= \<const0>\;
   s00_axi_bresp(0) <= \<const0>\;
   s00_axi_rresp(1) <= \<const0>\;
@@ -6299,6 +6446,8 @@ entity Fir_filter_PmodAD1_0_0 is
     Pmod_out_pin9_i : in STD_LOGIC;
     Pmod_out_pin9_o : out STD_LOGIC;
     Pmod_out_pin9_t : out STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s00_axi_awvalid : in STD_LOGIC;
@@ -6318,8 +6467,30 @@ entity Fir_filter_PmodAD1_0_0 is
     s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
+    m_axi_init_axi_txn : in STD_LOGIC;
+    m_axi_error : out STD_LOGIC;
+    m_axi_txn_done : out STD_LOGIC;
+    m_axi_aclk : in STD_LOGIC;
+    m_axi_aresetn : in STD_LOGIC;
+    m_axi_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_awvalid : out STD_LOGIC;
+    m_axi_awready : in STD_LOGIC;
+    m_axi_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_wvalid : out STD_LOGIC;
+    m_axi_wready : in STD_LOGIC;
+    m_axi_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_bvalid : in STD_LOGIC;
+    m_axi_bready : out STD_LOGIC;
+    m_axi_araddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_arprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_arvalid : out STD_LOGIC;
+    m_axi_arready : in STD_LOGIC;
+    m_axi_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_rvalid : in STD_LOGIC;
+    m_axi_rready : out STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of Fir_filter_PmodAD1_0_0 : entity is true;
@@ -6348,7 +6519,20 @@ architecture STRUCTURE of Fir_filter_PmodAD1_0_0 is
   signal NLW_inst_Pmod_out_pin8_t_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_Pmod_out_pin9_o_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_Pmod_out_pin9_t_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_m_axi_arvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_m_axi_awvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_m_axi_bready_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_m_axi_error_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_m_axi_rready_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_m_axi_txn_done_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_m_axi_wvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_led_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_inst_m_axi_araddr_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_inst_m_axi_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_inst_m_axi_awaddr_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_inst_m_axi_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_inst_m_axi_wdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_inst_m_axi_wstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_inst_s00_axi_bresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_s00_axi_rresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute AD1_CLOCKS_AFTER_DATA : integer;
@@ -6359,6 +6543,16 @@ architecture STRUCTURE of Fir_filter_PmodAD1_0_0 is
   attribute AD1_CLOCKS_BETWEEN_TRANSACTIONS of inst : label is 400;
   attribute AD1_CLOCKS_PER_BIT : integer;
   attribute AD1_CLOCKS_PER_BIT of inst : label is 20;
+  attribute C_M_AXI_ADDR_WIDTH : integer;
+  attribute C_M_AXI_ADDR_WIDTH of inst : label is 32;
+  attribute C_M_AXI_DATA_WIDTH : integer;
+  attribute C_M_AXI_DATA_WIDTH of inst : label is 32;
+  attribute C_M_AXI_START_DATA_VALUE : integer;
+  attribute C_M_AXI_START_DATA_VALUE of inst : label is -1442840576;
+  attribute C_M_AXI_TARGET_SLAVE_BASE_ADDR : integer;
+  attribute C_M_AXI_TARGET_SLAVE_BASE_ADDR of inst : label is 1073741824;
+  attribute C_M_AXI_TRANSACTIONS_NUM : integer;
+  attribute C_M_AXI_TRANSACTIONS_NUM of inst : label is 4;
   attribute C_S00_AXI_ADDR_WIDTH : integer;
   attribute C_S00_AXI_ADDR_WIDTH of inst : label is 4;
   attribute C_S00_AXI_DATA_WIDTH : integer;
@@ -6392,6 +6586,21 @@ architecture STRUCTURE of Fir_filter_PmodAD1_0_0 is
   attribute X_INTERFACE_INFO of Pmod_out_pin9_t : signal is "digilentinc.com:interface:pmod:1.0 Pmod_out PIN9_T";
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of Pmod_out_pin9_t : signal is "XIL_INTERFACENAME Pmod_out, BOARD.ASSOCIATED_PARAM PMOD";
+  attribute X_INTERFACE_INFO of m_axi_aclk : signal is "xilinx.com:signal:clock:1.0 m_axi_aclk CLK";
+  attribute X_INTERFACE_PARAMETER of m_axi_aclk : signal is "XIL_INTERFACENAME m_axi_aclk, ASSOCIATED_RESET m_axi_aresetn, ASSOCIATED_BUSIF m_axi, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Fir_filter_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of m_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 m_axi_aresetn RST";
+  attribute X_INTERFACE_PARAMETER of m_axi_aresetn : signal is "XIL_INTERFACENAME m_axi_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of m_axi_arready : signal is "xilinx.com:interface:aximm:1.0 m_axi ARREADY";
+  attribute X_INTERFACE_INFO of m_axi_arvalid : signal is "xilinx.com:interface:aximm:1.0 m_axi ARVALID";
+  attribute X_INTERFACE_INFO of m_axi_awready : signal is "xilinx.com:interface:aximm:1.0 m_axi AWREADY";
+  attribute X_INTERFACE_INFO of m_axi_awvalid : signal is "xilinx.com:interface:aximm:1.0 m_axi AWVALID";
+  attribute X_INTERFACE_INFO of m_axi_bready : signal is "xilinx.com:interface:aximm:1.0 m_axi BREADY";
+  attribute X_INTERFACE_INFO of m_axi_bvalid : signal is "xilinx.com:interface:aximm:1.0 m_axi BVALID";
+  attribute X_INTERFACE_INFO of m_axi_rready : signal is "xilinx.com:interface:aximm:1.0 m_axi RREADY";
+  attribute X_INTERFACE_PARAMETER of m_axi_rready : signal is "XIL_INTERFACENAME m_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN Fir_filter_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of m_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 m_axi RVALID";
+  attribute X_INTERFACE_INFO of m_axi_wready : signal is "xilinx.com:interface:aximm:1.0 m_axi WREADY";
+  attribute X_INTERFACE_INFO of m_axi_wvalid : signal is "xilinx.com:interface:aximm:1.0 m_axi WVALID";
   attribute X_INTERFACE_INFO of s00_axi_aclk : signal is "xilinx.com:signal:clock:1.0 AXI_LITE_SAMPLE_CLK CLK";
   attribute X_INTERFACE_PARAMETER of s00_axi_aclk : signal is "XIL_INTERFACENAME AXI_LITE_SAMPLE_CLK, ASSOCIATED_BUSIF AXI_LITE_SAMPLE, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Fir_filter_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s00_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 AXI_LITE_SAMPLE_RST RST";
@@ -6407,6 +6616,15 @@ architecture STRUCTURE of Fir_filter_PmodAD1_0_0 is
   attribute X_INTERFACE_INFO of s00_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE RVALID";
   attribute X_INTERFACE_INFO of s00_axi_wready : signal is "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE WREADY";
   attribute X_INTERFACE_INFO of s00_axi_wvalid : signal is "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE WVALID";
+  attribute X_INTERFACE_INFO of m_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 m_axi ARADDR";
+  attribute X_INTERFACE_INFO of m_axi_arprot : signal is "xilinx.com:interface:aximm:1.0 m_axi ARPROT";
+  attribute X_INTERFACE_INFO of m_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 m_axi AWADDR";
+  attribute X_INTERFACE_INFO of m_axi_awprot : signal is "xilinx.com:interface:aximm:1.0 m_axi AWPROT";
+  attribute X_INTERFACE_INFO of m_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 m_axi BRESP";
+  attribute X_INTERFACE_INFO of m_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 m_axi RDATA";
+  attribute X_INTERFACE_INFO of m_axi_rresp : signal is "xilinx.com:interface:aximm:1.0 m_axi RRESP";
+  attribute X_INTERFACE_INFO of m_axi_wdata : signal is "xilinx.com:interface:aximm:1.0 m_axi WDATA";
+  attribute X_INTERFACE_INFO of m_axi_wstrb : signal is "xilinx.com:interface:aximm:1.0 m_axi WSTRB";
   attribute X_INTERFACE_INFO of s00_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE ARADDR";
   attribute X_INTERFACE_INFO of s00_axi_arprot : signal is "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE ARPROT";
   attribute X_INTERFACE_INFO of s00_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 AXI_LITE_SAMPLE AWADDR";
@@ -6431,6 +6649,119 @@ begin
   Pmod_out_pin8_t <= \<const1>\;
   Pmod_out_pin9_o <= \<const1>\;
   Pmod_out_pin9_t <= \<const1>\;
+  m_axi_araddr(31) <= \<const0>\;
+  m_axi_araddr(30) <= \<const0>\;
+  m_axi_araddr(29) <= \<const0>\;
+  m_axi_araddr(28) <= \<const0>\;
+  m_axi_araddr(27) <= \<const0>\;
+  m_axi_araddr(26) <= \<const0>\;
+  m_axi_araddr(25) <= \<const0>\;
+  m_axi_araddr(24) <= \<const0>\;
+  m_axi_araddr(23) <= \<const0>\;
+  m_axi_araddr(22) <= \<const0>\;
+  m_axi_araddr(21) <= \<const0>\;
+  m_axi_araddr(20) <= \<const0>\;
+  m_axi_araddr(19) <= \<const0>\;
+  m_axi_araddr(18) <= \<const0>\;
+  m_axi_araddr(17) <= \<const0>\;
+  m_axi_araddr(16) <= \<const0>\;
+  m_axi_araddr(15) <= \<const0>\;
+  m_axi_araddr(14) <= \<const0>\;
+  m_axi_araddr(13) <= \<const0>\;
+  m_axi_araddr(12) <= \<const0>\;
+  m_axi_araddr(11) <= \<const0>\;
+  m_axi_araddr(10) <= \<const0>\;
+  m_axi_araddr(9) <= \<const0>\;
+  m_axi_araddr(8) <= \<const0>\;
+  m_axi_araddr(7) <= \<const0>\;
+  m_axi_araddr(6) <= \<const0>\;
+  m_axi_araddr(5) <= \<const0>\;
+  m_axi_araddr(4) <= \<const0>\;
+  m_axi_araddr(3) <= \<const0>\;
+  m_axi_araddr(2) <= \<const0>\;
+  m_axi_araddr(1) <= \<const0>\;
+  m_axi_araddr(0) <= \<const0>\;
+  m_axi_arprot(2) <= \<const0>\;
+  m_axi_arprot(1) <= \<const0>\;
+  m_axi_arprot(0) <= \<const0>\;
+  m_axi_arvalid <= \<const0>\;
+  m_axi_awaddr(31) <= \<const0>\;
+  m_axi_awaddr(30) <= \<const0>\;
+  m_axi_awaddr(29) <= \<const0>\;
+  m_axi_awaddr(28) <= \<const0>\;
+  m_axi_awaddr(27) <= \<const0>\;
+  m_axi_awaddr(26) <= \<const0>\;
+  m_axi_awaddr(25) <= \<const0>\;
+  m_axi_awaddr(24) <= \<const0>\;
+  m_axi_awaddr(23) <= \<const0>\;
+  m_axi_awaddr(22) <= \<const0>\;
+  m_axi_awaddr(21) <= \<const0>\;
+  m_axi_awaddr(20) <= \<const0>\;
+  m_axi_awaddr(19) <= \<const0>\;
+  m_axi_awaddr(18) <= \<const0>\;
+  m_axi_awaddr(17) <= \<const0>\;
+  m_axi_awaddr(16) <= \<const0>\;
+  m_axi_awaddr(15) <= \<const0>\;
+  m_axi_awaddr(14) <= \<const0>\;
+  m_axi_awaddr(13) <= \<const0>\;
+  m_axi_awaddr(12) <= \<const0>\;
+  m_axi_awaddr(11) <= \<const0>\;
+  m_axi_awaddr(10) <= \<const0>\;
+  m_axi_awaddr(9) <= \<const0>\;
+  m_axi_awaddr(8) <= \<const0>\;
+  m_axi_awaddr(7) <= \<const0>\;
+  m_axi_awaddr(6) <= \<const0>\;
+  m_axi_awaddr(5) <= \<const0>\;
+  m_axi_awaddr(4) <= \<const0>\;
+  m_axi_awaddr(3) <= \<const0>\;
+  m_axi_awaddr(2) <= \<const0>\;
+  m_axi_awaddr(1) <= \<const0>\;
+  m_axi_awaddr(0) <= \<const0>\;
+  m_axi_awprot(2) <= \<const0>\;
+  m_axi_awprot(1) <= \<const0>\;
+  m_axi_awprot(0) <= \<const0>\;
+  m_axi_awvalid <= \<const0>\;
+  m_axi_bready <= \<const0>\;
+  m_axi_error <= \<const0>\;
+  m_axi_rready <= \<const0>\;
+  m_axi_txn_done <= \<const0>\;
+  m_axi_wdata(31) <= \<const0>\;
+  m_axi_wdata(30) <= \<const0>\;
+  m_axi_wdata(29) <= \<const0>\;
+  m_axi_wdata(28) <= \<const0>\;
+  m_axi_wdata(27) <= \<const0>\;
+  m_axi_wdata(26) <= \<const0>\;
+  m_axi_wdata(25) <= \<const0>\;
+  m_axi_wdata(24) <= \<const0>\;
+  m_axi_wdata(23) <= \<const0>\;
+  m_axi_wdata(22) <= \<const0>\;
+  m_axi_wdata(21) <= \<const0>\;
+  m_axi_wdata(20) <= \<const0>\;
+  m_axi_wdata(19) <= \<const0>\;
+  m_axi_wdata(18) <= \<const0>\;
+  m_axi_wdata(17) <= \<const0>\;
+  m_axi_wdata(16) <= \<const0>\;
+  m_axi_wdata(15) <= \<const0>\;
+  m_axi_wdata(14) <= \<const0>\;
+  m_axi_wdata(13) <= \<const0>\;
+  m_axi_wdata(12) <= \<const0>\;
+  m_axi_wdata(11) <= \<const0>\;
+  m_axi_wdata(10) <= \<const0>\;
+  m_axi_wdata(9) <= \<const0>\;
+  m_axi_wdata(8) <= \<const0>\;
+  m_axi_wdata(7) <= \<const0>\;
+  m_axi_wdata(6) <= \<const0>\;
+  m_axi_wdata(5) <= \<const0>\;
+  m_axi_wdata(4) <= \<const0>\;
+  m_axi_wdata(3) <= \<const0>\;
+  m_axi_wdata(2) <= \<const0>\;
+  m_axi_wdata(1) <= \<const0>\;
+  m_axi_wdata(0) <= \<const0>\;
+  m_axi_wstrb(3) <= \<const0>\;
+  m_axi_wstrb(2) <= \<const0>\;
+  m_axi_wstrb(1) <= \<const0>\;
+  m_axi_wstrb(0) <= \<const0>\;
+  m_axi_wvalid <= \<const0>\;
   s00_axi_bresp(1) <= \<const0>\;
   s00_axi_bresp(0) <= \<const0>\;
   s00_axi_rresp(1) <= \<const0>\;
@@ -6470,6 +6801,30 @@ inst: entity work.Fir_filter_PmodAD1_0_0_PmodAD1_v1_0
       Pmod_out_pin9_o => NLW_inst_Pmod_out_pin9_o_UNCONNECTED,
       Pmod_out_pin9_t => NLW_inst_Pmod_out_pin9_t_UNCONNECTED,
       led(1 downto 0) => NLW_inst_led_UNCONNECTED(1 downto 0),
+      m_axi_aclk => '0',
+      m_axi_araddr(31 downto 0) => NLW_inst_m_axi_araddr_UNCONNECTED(31 downto 0),
+      m_axi_aresetn => '0',
+      m_axi_arprot(2 downto 0) => NLW_inst_m_axi_arprot_UNCONNECTED(2 downto 0),
+      m_axi_arready => '0',
+      m_axi_arvalid => NLW_inst_m_axi_arvalid_UNCONNECTED,
+      m_axi_awaddr(31 downto 0) => NLW_inst_m_axi_awaddr_UNCONNECTED(31 downto 0),
+      m_axi_awprot(2 downto 0) => NLW_inst_m_axi_awprot_UNCONNECTED(2 downto 0),
+      m_axi_awready => '0',
+      m_axi_awvalid => NLW_inst_m_axi_awvalid_UNCONNECTED,
+      m_axi_bready => NLW_inst_m_axi_bready_UNCONNECTED,
+      m_axi_bresp(1 downto 0) => B"00",
+      m_axi_bvalid => '0',
+      m_axi_error => NLW_inst_m_axi_error_UNCONNECTED,
+      m_axi_init_axi_txn => '0',
+      m_axi_rdata(31 downto 0) => B"00000000000000000000000000000000",
+      m_axi_rready => NLW_inst_m_axi_rready_UNCONNECTED,
+      m_axi_rresp(1 downto 0) => B"00",
+      m_axi_rvalid => '0',
+      m_axi_txn_done => NLW_inst_m_axi_txn_done_UNCONNECTED,
+      m_axi_wdata(31 downto 0) => NLW_inst_m_axi_wdata_UNCONNECTED(31 downto 0),
+      m_axi_wready => '0',
+      m_axi_wstrb(3 downto 0) => NLW_inst_m_axi_wstrb_UNCONNECTED(3 downto 0),
+      m_axi_wvalid => NLW_inst_m_axi_wvalid_UNCONNECTED,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_araddr(3 downto 2) => s00_axi_araddr(3 downto 2),
       s00_axi_araddr(1 downto 0) => B"00",
