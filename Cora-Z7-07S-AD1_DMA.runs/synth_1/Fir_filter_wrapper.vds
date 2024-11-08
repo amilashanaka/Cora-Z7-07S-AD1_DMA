@@ -3,8 +3,8 @@
 # SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
 # IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
 # SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-# Start of session at: Thu Nov  7 11:25:28 2024
-# Process ID: 23616
+# Start of session at: Fri Nov  8 11:59:20 2024
+# Process ID: 28812
 # Current directory: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1
 # Command line: vivado.exe -log Fir_filter_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fir_filter_wrapper.tcl
 # Log file: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/Fir_filter_wrapper.vds
@@ -19,12 +19,15 @@
 # Host memory       :34124 MB
 # Swap memory       :2147 MB
 # Total Virtual     :36272 MB
-# Available Virtual :21618 MB
+# Available Virtual :12194 MB
 #-----------------------------------------------------------
 source Fir_filter_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 691.270 ; gain = 237.945
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 689.859 ; gain = 236.516
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ip_repo/myip_1_0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Projects/ERN24004/Projects/ip_repo/ad1_dma_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Projects/ERN24004/Projects/ip_repo/myip_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
 Command: read_checkpoint -auto_incremental -incremental C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/utils_1/imports/synth_1/Fir_filter_wrapper.dcp
@@ -40,36 +43,36 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9748
+INFO: [Synth 8-7075] Helper process launched with PID 30376
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1584.129 ; gain = 448.738
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1583.277 ; gain = 448.781
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Fir_filter_wrapper' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/hdl/Fir_filter_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'Fir_filter' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:13]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_PmodAD1_0_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_PmodAD1_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_PmodAD1_0_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_PmodAD1_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_PmodAD1_0_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_PmodAD1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_PmodAD1_0_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_PmodAD1_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_error' of module 'Fir_filter_PmodAD1_0_0' is unconnected for instance 'AD1_DMA' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:346]
 WARNING: [Synth 8-7071] port 'm_axi_txn_done' of module 'Fir_filter_PmodAD1_0_0' is unconnected for instance 'AD1_DMA' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:346]
 WARNING: [Synth 8-7023] instance 'AD1_DMA' of module 'Fir_filter_PmodAD1_0_0' has 69 connections declared, but only 67 given [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:346]
 INFO: [Synth 8-6157] synthesizing module 'Fir_filter_axi_mem_intercon_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:776]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_85XB3J' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:2200]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_auto_pc_1' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_auto_pc_1' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_auto_pc_1' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_auto_pc_1' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_85XB3J' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:2200]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_ZA75IM' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3056]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_auto_us_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_auto_us_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_auto_us_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_auto_us_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_auto_us_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_auto_us_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'Fir_filter_auto_us_0' is unconnected for instance 'auto_us' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3183]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'Fir_filter_auto_us_0' has 34 connections declared, but only 33 given [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3183]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_ZA75IM' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3056]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_7ASD0O' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3365]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_auto_us_1' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_auto_us_1' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_auto_us_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_auto_us_1' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_auto_us_1' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_auto_us_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'Fir_filter_auto_us_1' is unconnected for instance 'auto_us' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3516]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'Fir_filter_auto_us_1' has 40 connections declared, but only 39 given [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3516]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_7ASD0O' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3365]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_xbar_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_xbar_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_xbar_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_xbar_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_xbar_0_stub.v:6]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'Fir_filter_xbar_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:1347]
 WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'Fir_filter_xbar_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:1364]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'Fir_filter_xbar_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:1365]
@@ -79,10 +82,10 @@ WARNING: [Synth 8-7071] port 's_axi_bid' of module 'Fir_filter_xbar_0' is unconn
 WARNING: [Synth 8-7071] port 's_axi_rid' of module 'Fir_filter_xbar_0' is unconnected for instance 'xbar' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:1297]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'Fir_filter_xbar_0' has 78 connections declared, but only 76 given [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:1297]
 INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_axi_mem_intercon_0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:776]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_fir_compiler_0_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_fir_compiler_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_fir_compiler_0_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_fir_compiler_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_axi_dma_0_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_axi_dma_0_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_fir_compiler_0_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_fir_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_fir_compiler_0_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_fir_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_axi_dma_0_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_axi_dma_0_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_axi_dma_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Fir_filter_axi_dma_0_0' is unconnected for instance 'fir_dma' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:500]
 WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'Fir_filter_axi_dma_0_0' is unconnected for instance 'fir_dma' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:500]
 WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'Fir_filter_axi_dma_0_0' is unconnected for instance 'fir_dma' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:500]
@@ -90,8 +93,8 @@ WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Fir_filter_axi_dma_0_0' i
 WARNING: [Synth 8-7071] port 's2mm_introut' of module 'Fir_filter_axi_dma_0_0' is unconnected for instance 'fir_dma' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:500]
 WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Fir_filter_axi_dma_0_0' is unconnected for instance 'fir_dma' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:500]
 WARNING: [Synth 8-7023] instance 'fir_dma' of module 'Fir_filter_axi_dma_0_0' has 64 connections declared, but only 58 given [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:500]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_processing_system7_0_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_processing_system7_0_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_processing_system7_0_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_processing_system7_0_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'Fir_filter_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:559]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'Fir_filter_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:559]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'Fir_filter_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:559]
@@ -105,16 +108,16 @@ INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1F99VBT' (0#1) [
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1PK2F1B' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:2605]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1PK2F1B' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:2605]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1OR9UE0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:2751]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_auto_pc_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_auto_pc_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_auto_pc_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_auto_pc_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1OR9UE0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:2751]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1H60UVY' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3219]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1H60UVY' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:3219]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_xbar_1' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_xbar_1' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_xbar_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_xbar_1' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_xbar_1' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_xbar_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_ps7_0_axi_periph_0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:1376]
-INFO: [Synth 8-6157] synthesizing module 'Fir_filter_rst_ps7_0_50M_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_rst_ps7_0_50M_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-23616-DonGun/realtime/Fir_filter_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Fir_filter_rst_ps7_0_50M_0' [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_rst_ps7_0_50M_0' (0#1) [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/.Xil/Vivado-28812-DonGun/realtime/Fir_filter_rst_ps7_0_50M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'Fir_filter_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:767]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'Fir_filter_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:767]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'Fir_filter_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/synth/Fir_filter.v:767]
@@ -169,18 +172,18 @@ WARNING: [Synth 8-7129] Port S00_ARESETN in module Fir_filter_axi_mem_intercon_0
 WARNING: [Synth 8-7129] Port S01_ACLK in module Fir_filter_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S01_ARESETN in module Fir_filter_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1705.648 ; gain = 570.258
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1705.062 ; gain = 570.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1705.648 ; gain = 570.258
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1705.062 ; gain = 570.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1705.648 ; gain = 570.258
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1705.062 ; gain = 570.566
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1705.648 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1705.062 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -220,23 +223,23 @@ Parsing XDC File [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-
 Finished Parsing XDC File [C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1759.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1756.703 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1759.840 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1756.703 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -516,10 +519,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for Fir_filter_i/AD1_DMA. (constraint
 Applied set_property KEEP_HIERARCHY = SOFT for Fir_filter_i/fir. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Fir_filter_i/fir_dma. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -566,25 +569,25 @@ WARNING: [Synth 8-7129] Port S00_ARESETN in module Fir_filter_axi_mem_intercon_0
 WARNING: [Synth 8-7129] Port S01_ACLK in module Fir_filter_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S01_ARESETN in module Fir_filter_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -602,37 +605,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -670,28 +673,28 @@ Report Cell Usage:
 |12    |IOBUF                           |     8|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1756.703 ; gain = 622.207
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1759.840 ; gain = 570.258
-Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.840 ; gain = 624.449
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1756.703 ; gain = 570.566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1756.703 ; gain = 622.207
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1759.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1756.703 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1759.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1756.703 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
 Synth Design complete | Checksum: 89f0cce5
 INFO: [Common 17-83] Releasing license: Synthesis
-74 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+73 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1759.840 ; gain = 1020.891
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1759.840 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1756.703 ; gain = 1019.391
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1756.703 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/synth_1/Fir_filter_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file Fir_filter_wrapper_utilization_synth.rpt -pb Fir_filter_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 11:26:08 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 12:00:02 2024...

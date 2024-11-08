@@ -1,6 +1,69 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Fri Nov  8 11:58:00 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fir_filter_PmodAD1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of Fir_filter_PmodAD1_0_0 (spicerconsulting:IP:AD1DMA:1.0 (Rev. 7)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Fri Nov  8 11:56:51 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fir_filter_PmodAD1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Fir_filter_PmodAD1_0_0 (spicerconsulting:IP:AD1DMA:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Fri Nov  8 11:54:53 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Fir_filter_PmodAD1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of Fir_filter_PmodAD1_0_0 (spicerconsulting:IP:AD1DMA:1.0 (Rev. 6)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
 | Date         : Thu Nov  7 11:24:08 2024
 | Host         : DonGun running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
