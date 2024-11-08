@@ -47,7 +47,12 @@
     input wire [C_M_AXI_DATA_WIDTH-1 : 0] M_AXI_RDATA,
     input wire [1 : 0] M_AXI_RRESP,
     input wire  M_AXI_RVALID,
-    output wire  M_AXI_RREADY
+    output wire  M_AXI_RREADY,
+    
+    // Data input from ADC
+    input wire [C_M_AXI_DATA_WIDTH-1 : 0] adc_data,
+    input wire adc_data_valid,
+    output reg ready_for_data
 		
 
 		
