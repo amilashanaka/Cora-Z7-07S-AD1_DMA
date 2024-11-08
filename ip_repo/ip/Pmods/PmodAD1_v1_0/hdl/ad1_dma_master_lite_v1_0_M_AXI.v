@@ -3,43 +3,23 @@
 
 	module ad1_dma_master_lite_v1_0_M_AXI #
 	(
-		// Users to add parameters here
-
-		// User parameters ends
-		// Do not modify the parameters beyond this line
-
-		// The master will start generating data from the C_M_START_DATA_VALUE value
-		parameter  C_M_START_DATA_VALUE	= 32'hAA000000,
-		// The master requires a target slave base address.
-    // The master will initiate read and write transactions on the slave with base address specified here as a parameter.
-		parameter  C_M_TARGET_SLAVE_BASE_ADDR	= 32'h40000000,
-		// Width of M_AXI address bus. 
-    // The master generates the read and write addresses of width specified as C_M_AXI_ADDR_WIDTH.
-		parameter integer C_M_AXI_ADDR_WIDTH	= 32,
-		// Width of M_AXI data bus. 
-    // The master issues write data and accept read data where the width of the data bus is C_M_AXI_DATA_WIDTH
-		parameter integer C_M_AXI_DATA_WIDTH	= 32,
-		// Transaction number is the number of write 
-    // and read transactions the master will perform as a part of this example memory test.
-		parameter integer C_M_TRANSACTIONS_NUM	= 4
+	    // Parameters for AXI and buffer configurations
+        parameter C_M_START_DATA_VALUE = 32'hAA000000,
+        parameter C_M_TARGET_SLAVE_BASE_ADDR = 32'h40000000,
+        parameter integer C_M_AXI_ADDR_WIDTH = 32,
+        parameter integer C_M_AXI_DATA_WIDTH = 32,
+        parameter integer C_M_TRANSACTIONS_NUM = 4,
+        parameter BUFFER_SIZE = 1024  // Buffer size in samples
 	)
 	(
-		// Users to add ports here
+    
+          // Control signals
+        input wire INIT_AXI_TXN,    // Start transaction signal
+        output reg ERROR,           // Error flag
+        output wire TXN_DONE,       // Transaction done flag
+        input wire M_AXI_ACLK,      // AXI clock
+        input wire M_AXI_ARESETN,   // AXI reset (active-low)
 
-		// User ports ends
-		// Do not modify the ports beyond this line
-
-		// Initiate AXI transactions
-		input wire  INIT_AXI_TXN,
-		// Asserts when ERROR is detected
-		output reg  ERROR,
-		// Asserts when AXI transactions is complete
-		output wire  TXN_DONE,
-		// AXI clock signal
-		input wire  M_AXI_ACLK,
-		// AXI active low reset signal
-		input wire  M_AXI_ARESETN,
-		// Master Interface Write Address Channel ports. Write address (issued by master)
 		output wire [C_M_AXI_ADDR_WIDTH-1 : 0] M_AXI_AWADDR,
 		// Write channel Protection type.
     // This signal indicates the privilege and security level of the transaction,
