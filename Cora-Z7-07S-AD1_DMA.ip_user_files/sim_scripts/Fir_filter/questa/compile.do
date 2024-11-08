@@ -123,9 +123,9 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Cora-Z7-07S-AD1_DMA
 "../../../bd/Fir_filter/ip/Fir_filter_xbar_0/sim/Fir_filter_xbar_0.v" \
 "../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/src/pmod_concat.v" \
 "../../../bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/sim/pmod_bridge_0.v" \
-"../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/45a2/src/ad1_spi.v" \
-"../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/45a2/hdl/PmodAD1_v1_0_S00_AXI.v" \
-"../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/45a2/hdl/PmodAD1_v1_0.v" \
+"../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/edc3/src/ad1_spi.v" \
+"../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/edc3/hdl/PmodAD1_v1_0_S00_AXI.v" \
+"../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/edc3/hdl/PmodAD1_v1_0.v" \
 "../../../bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/sim/Fir_filter_PmodAD1_0_0.v" \
 
 vcom -work xbip_utils_v3_0_13  -93  \
