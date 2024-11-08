@@ -12,14 +12,18 @@
         parameter BUFFER_SIZE = 1024  // Buffer size in samples
 	)
 	(
-    
-          // Control signals
-        input wire INIT_AXI_TXN,    // Start transaction signal
-        output reg ERROR,           // Error flag
-        output wire TXN_DONE,       // Transaction done flag
-        input wire M_AXI_ACLK,      // AXI clock
-        input wire M_AXI_ARESETN,   // AXI reset (active-low)
-
+	
+	 // Control signals
+	 input wire  INIT_AXI_TXN,
+	 output reg  ERROR,
+	 output wire  TXN_DONE,
+	 input wire  M_AXI_ACLK,
+	 input wire  M_AXI_ARESETN,
+	 
+	 // AXI Master Interface Write Address
+ 
+		
+		// Master Interface Write Address Channel ports. Write address (issued by master)
 		output wire [C_M_AXI_ADDR_WIDTH-1 : 0] M_AXI_AWADDR,
 		// Write channel Protection type.
     // This signal indicates the privilege and security level of the transaction,

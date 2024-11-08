@@ -8,27 +8,12 @@
   **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
   **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
   **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Fri Nov  8 14:30:09 2024
+  **** Start of session at: Fri Nov  8 15:00:45 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source Fir_filter_PmodAD1_0_0.tcl -notrace
-
-*** Running vivado
-    with args -log Fir_filter_PmodAD1_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fir_filter_PmodAD1_0_0.tcl
-
-
-
-****** Vivado v2024.1.2 (64-bit)
-  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
-  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
-  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Fri Nov  8 14:30:33 2024
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source Fir_filter_PmodAD1_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 690.863 ; gain = 237.836
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 691.938 ; gain = 242.777
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Projects/ERN24004/Projects/ip_repo/ad1_dma_1_0'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
@@ -45,31 +30,31 @@ INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13796
+INFO: [Synth 8-7075] Helper process launched with PID 35848
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1557.180 ; gain = 447.090
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1556.625 ; gain = 445.625
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Fir_filter_PmodAD1_0_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/synth/Fir_filter_PmodAD1_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'PmodAD1_v1_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/PmodAD1_v1_0.v:4]
-INFO: [Synth 8-6157] synthesizing module 'PmodAD1_v1_0_S00_AXI' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/PmodAD1_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-226] default block is never used [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/PmodAD1_v1_0_S00_AXI.v:235]
-INFO: [Synth 8-226] default block is never used [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/PmodAD1_v1_0_S00_AXI.v:376]
-INFO: [Synth 8-6157] synthesizing module 'ad1_spi' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/src/ad1_spi.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'ad1_spi' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/src/ad1_spi.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'PmodAD1_v1_0_S00_AXI' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/PmodAD1_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'ad1_dma_master_lite_v1_0_M_AXI' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:4]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:224]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:352]
-INFO: [Synth 8-226] default block is never used [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:455]
-INFO: [Synth 8-6155] done synthesizing module 'ad1_dma_master_lite_v1_0_M_AXI' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PmodAD1_v1_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/PmodAD1_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PmodAD1_v1_0_S00_AXI' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/PmodAD1_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/PmodAD1_v1_0_S00_AXI.v:235]
+INFO: [Synth 8-226] default block is never used [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/PmodAD1_v1_0_S00_AXI.v:376]
+INFO: [Synth 8-6157] synthesizing module 'ad1_spi' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/src/ad1_spi.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'ad1_spi' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/src/ad1_spi.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'PmodAD1_v1_0_S00_AXI' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/PmodAD1_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ad1_dma_master_lite_v1_0_M_AXI' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:228]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:356]
+INFO: [Synth 8-226] default block is never used [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:459]
+INFO: [Synth 8-6155] done synthesizing module 'ad1_dma_master_lite_v1_0_M_AXI' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/ad1_dma_master_lite_v1_0_M_AXI.v:4]
 INFO: [Synth 8-6157] synthesizing module 'pmod_bridge_0' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/synth/pmod_bridge_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/src/pmod_concat.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/src/pmod_concat.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'pmod_bridge_0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/synth/pmod_bridge_0.v:53]
-INFO: [Synth 8-6155] done synthesizing module 'PmodAD1_v1_0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/PmodAD1_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'PmodAD1_v1_0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/PmodAD1_v1_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'Fir_filter_PmodAD1_0_0' (0#1) [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/synth/Fir_filter_PmodAD1_0_0.v:53]
-WARNING: [Synth 8-3848] Net led in module/entity ad1_spi does not have driver. [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/src/ad1_spi.v:50]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/b6a4/hdl/PmodAD1_v1_0_S00_AXI.v:227]
+WARNING: [Synth 8-3848] Net led in module/entity ad1_spi does not have driver. [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/src/ad1_spi.v:50]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ipshared/5305/hdl/PmodAD1_v1_0_S00_AXI.v:227]
 WARNING: [Synth 8-3848] Net in_top_bus_I in module/entity pmod_concat does not have driver. [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/src/pmod_concat.v:84]
 WARNING: [Synth 8-3848] Net in_top_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/src/pmod_concat.v:87]
 WARNING: [Synth 8-3848] Net in_top_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/src/pmod_concat.v:90]
@@ -135,18 +120,18 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module PmodAD1_v1_0_S00_AXI is e
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module PmodAD1_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module PmodAD1_v1_0_S00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1679.051 ; gain = 568.961
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1679.102 ; gain = 568.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1679.051 ; gain = 568.961
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1679.102 ; gain = 568.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1679.051 ; gain = 568.961
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1679.102 ; gain = 568.102
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1679.051 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1679.102 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -169,21 +154,21 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Fir_filter_PmodAD1_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1780.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1779.457 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1780.148 ; gain = 0.031
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1779.461 ; gain = 0.004
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -192,7 +177,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/PmodAD1_pmod_bridge_0_0/inst
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/Fir_filter_PmodAD1_0_0_synth_1/dont_touch.xdc, line 17).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/PmodAD1_pmod_bridge_0_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad1_spi'
 INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'ad1_dma_master_lite_v1_0_M_AXI'
@@ -233,7 +218,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'one-hot' in module 'ad1_dma_master_lite_v1_0_M_AXI'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -322,25 +307,25 @@ WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_O[1] in module pmod_concat 
 WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -358,37 +343,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -415,18 +400,18 @@ Report Cell Usage:
 |9     |FDSE   |     5|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1779.461 ; gain = 668.461
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 59 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1780.148 ; gain = 568.961
-Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1780.148 ; gain = 670.059
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1779.461 ; gain = 568.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1779.461 ; gain = 668.461
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1780.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1779.461 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1780.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1779.461 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -434,12 +419,12 @@ Synth Design complete | Checksum: d4880a3
 INFO: [Common 17-83] Releasing license: Synthesis
 49 Infos, 111 Warnings, 8 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 1780.148 ; gain = 1068.828
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1780.148 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1779.461 ; gain = 1067.496
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1779.461 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/Fir_filter_PmodAD1_0_0_synth_1/Fir_filter_PmodAD1_0_0.dcp' has been generated.
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1780.148 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1779.461 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.runs/Fir_filter_PmodAD1_0_0_synth_1/Fir_filter_PmodAD1_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file Fir_filter_PmodAD1_0_0_utilization_synth.rpt -pb Fir_filter_PmodAD1_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 14:31:14 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 15:01:29 2024...
