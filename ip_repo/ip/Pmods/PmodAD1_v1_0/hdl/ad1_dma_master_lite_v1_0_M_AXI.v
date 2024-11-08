@@ -21,58 +21,36 @@
 	 input wire  M_AXI_ARESETN,
 	 
 	 // AXI Master Interface Write Address
+	 output wire [C_M_AXI_ADDR_WIDTH-1 : 0] M_AXI_AWADDR,
+	 output wire [2 : 0] M_AXI_AWPROT,
+	 output wire  M_AXI_AWVALID,
+	 input wire  M_AXI_AWREADY,
  
+     // AXI Master Interface Write Data
+     output wire [C_M_AXI_DATA_WIDTH-1 : 0] M_AXI_WDATA,
+     output wire [C_M_AXI_DATA_WIDTH/8-1 : 0] M_AXI_WSTRB,
+     output wire  M_AXI_WVALID,
+     input wire  M_AXI_WREADY,
 		
-		// Master Interface Write Address Channel ports. Write address (issued by master)
-		output wire [C_M_AXI_ADDR_WIDTH-1 : 0] M_AXI_AWADDR,
-		// Write channel Protection type.
-    // This signal indicates the privilege and security level of the transaction,
-    // and whether the transaction is a data access or an instruction access.
-		output wire [2 : 0] M_AXI_AWPROT,
-		// Write address valid. 
-    // This signal indicates that the master signaling valid write address and control information.
-		output wire  M_AXI_AWVALID,
-		// Write address ready. 
-    // This signal indicates that the slave is ready to accept an address and associated control signals.
-		input wire  M_AXI_AWREADY,
-		// Master Interface Write Data Channel ports. Write data (issued by master)
-		output wire [C_M_AXI_DATA_WIDTH-1 : 0] M_AXI_WDATA,
-		// Write strobes. 
-    // This signal indicates which byte lanes hold valid data.
-    // There is one write strobe bit for each eight bits of the write data bus.
-		output wire [C_M_AXI_DATA_WIDTH/8-1 : 0] M_AXI_WSTRB,
-		// Write valid. This signal indicates that valid write data and strobes are available.
-		output wire  M_AXI_WVALID,
-		// Write ready. This signal indicates that the slave can accept the write data.
-		input wire  M_AXI_WREADY,
-		// Master Interface Write Response Channel ports. 
-    // This signal indicates the status of the write transaction.
-		input wire [1 : 0] M_AXI_BRESP,
-		// Write response valid. 
-    // This signal indicates that the channel is signaling a valid write response
-		input wire  M_AXI_BVALID,
-		// Response ready. This signal indicates that the master can accept a write response.
-		output wire  M_AXI_BREADY,
-		// Master Interface Read Address Channel ports. Read address (issued by master)
-		output wire [C_M_AXI_ADDR_WIDTH-1 : 0] M_AXI_ARADDR,
-		// Protection type. 
-    // This signal indicates the privilege and security level of the transaction, 
-    // and whether the transaction is a data access or an instruction access.
-		output wire [2 : 0] M_AXI_ARPROT,
-		// Read address valid. 
-    // This signal indicates that the channel is signaling valid read address and control information.
-		output wire  M_AXI_ARVALID,
-		// Read address ready. 
-    // This signal indicates that the slave is ready to accept an address and associated control signals.
-		input wire  M_AXI_ARREADY,
-		// Master Interface Read Data Channel ports. Read data (issued by slave)
-		input wire [C_M_AXI_DATA_WIDTH-1 : 0] M_AXI_RDATA,
-		// Read response. This signal indicates the status of the read transfer.
-		input wire [1 : 0] M_AXI_RRESP,
-		// Read valid. This signal indicates that the channel is signaling the required read data.
-		input wire  M_AXI_RVALID,
-		// Read ready. This signal indicates that the master can accept the read data and response information.
-		output wire  M_AXI_RREADY
+    // AXI Master Interface Write Response
+    input wire [1 : 0] M_AXI_BRESP,
+    input wire  M_AXI_BVALID,
+    output wire  M_AXI_BREADY,
+ 
+    // AXI Master Interface Read Address (not used here, included for completeness)
+    output wire [C_M_AXI_ADDR_WIDTH-1 : 0] M_AXI_ARADDR,
+    output wire [2 : 0] M_AXI_ARPROT,
+    output wire  M_AXI_ARVALID,
+    input wire  M_AXI_ARREADY,
+    
+    // AXI Master Interface Read Data (not used here, included for completeness)
+    input wire [C_M_AXI_DATA_WIDTH-1 : 0] M_AXI_RDATA,
+    input wire [1 : 0] M_AXI_RRESP,
+    input wire  M_AXI_RVALID,
+    output wire  M_AXI_RREADY
+		
+
+		
 	);
 
 	// function called clogb2 that returns an integer which has the
