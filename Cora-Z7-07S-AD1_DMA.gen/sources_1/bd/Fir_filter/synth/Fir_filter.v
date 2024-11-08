@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-//Date        : Fri Nov  8 12:27:20 2024
+//Date        : Fri Nov  8 14:17:09 2024
 //Host        : DonGun running 64-bit major release  (build 9200)
 //Command     : generate_target Fir_filter.bd
 //Design      : Fir_filter
@@ -381,7 +381,7 @@ module Fir_filter
         .m_axi_bready(AD1_DMA_m00_axi_BREADY),
         .m_axi_bresp(AD1_DMA_m00_axi_BRESP),
         .m_axi_bvalid(AD1_DMA_m00_axi_BVALID),
-        .m_axi_init_axi_txn(1'b0),
+        .m_axi_init_axi_txn(rst_ps7_0_50M_peripheral_aresetn),
         .m_axi_rdata(AD1_DMA_m00_axi_RDATA),
         .m_axi_rready(AD1_DMA_m00_axi_RREADY),
         .m_axi_rresp(AD1_DMA_m00_axi_RRESP),

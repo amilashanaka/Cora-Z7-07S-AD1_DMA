@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-| Date             : Fri Nov  8 12:30:19 2024
+| Date             : Fri Nov  8 14:20:48 2024
 | Host             : DonGun running 64-bit major release  (build 9200)
 | Command          : report_power -file Fir_filter_wrapper_power_routed.rpt -pb Fir_filter_wrapper_power_summary_routed.pb -rpx Fir_filter_wrapper_power_routed.rpx
 | Design           : Fir_filter_wrapper
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.008 |        3 |       --- |             --- |
-| Slice Logic              |     0.001 |    10700 |       --- |             --- |
-|   LUT as Logic           |     0.001 |     2818 |     14400 |           19.57 |
-|   CARRY4                 |    <0.001 |      106 |      4400 |            2.41 |
-|   Register               |    <0.001 |     5122 |     28800 |           17.78 |
+| Slice Logic              |     0.001 |    10994 |       --- |             --- |
+|   LUT as Logic           |     0.001 |     2940 |     14400 |           20.42 |
+|   CARRY4                 |    <0.001 |      132 |      4400 |            3.00 |
+|   Register               |    <0.001 |     5240 |     28800 |           18.19 |
 |   LUT as Shift Register  |    <0.001 |      654 |      6000 |           10.90 |
-|   Others                 |     0.000 |      611 |       --- |             --- |
+|   Others                 |     0.000 |      612 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |       18 |      6000 |            0.30 |
-| Signals                  |     0.002 |     9889 |       --- |             --- |
+| Signals                  |     0.002 |    10131 |       --- |             --- |
 | Block RAM                |    <0.001 |        2 |        50 |            4.00 |
 | DSPs                     |     0.000 |       55 |        66 |           83.33 |
 | I/O                      |     0.001 |        8 |       100 |            8.00 |

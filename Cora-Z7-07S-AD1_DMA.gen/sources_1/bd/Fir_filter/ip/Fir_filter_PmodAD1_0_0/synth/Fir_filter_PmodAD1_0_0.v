@@ -48,7 +48,7 @@
 
 
 // IP VLNV: spicerconsulting:IP:AD1DMA:1.0
-// IP Revision: 9
+// IP Revision: 13
 
 (* X_CORE_INFO = "PmodAD1_v1_0,Vivado 2024.1.2" *)
 (* CHECK_LICENSE_TYPE = "Fir_filter_PmodAD1_0_0,PmodAD1_v1_0,{}" *)
@@ -282,7 +282,10 @@ output wire m_axi_rready;
     .C_M_AXI_TARGET_SLAVE_BASE_ADDR(32'H40000000),
     .C_M_AXI_ADDR_WIDTH(32),
     .C_M_AXI_DATA_WIDTH(32),
-    .C_M_AXI_TRANSACTIONS_NUM(4)
+    .C_M_AXI_TRANSACTIONS_NUM(4),
+    .DATA_WIDTH(32),
+    .ADDR_WIDTH(32),
+    .BUFFER_SIZE(1024)
   ) inst (
     .Pmod_out_pin10_i(Pmod_out_pin10_i),
     .Pmod_out_pin10_o(Pmod_out_pin10_o),

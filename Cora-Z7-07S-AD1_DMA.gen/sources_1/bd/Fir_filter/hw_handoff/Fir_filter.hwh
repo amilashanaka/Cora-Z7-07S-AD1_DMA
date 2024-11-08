@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov  8 12:27:22 2024" VIVADOVERSION="2024.1.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov  8 14:17:11 2024" VIVADOVERSION="2024.1.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:cora-z7-07s:part0:1.1" DEVICE="7z007s" NAME="Fir_filter" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -307,7 +307,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="9" FULLNAME="/AD1_DMA" HWVERSION="1.0" INSTANCE="AD1_DMA" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AD1DMA" VLNV="spicerconsulting:IP:AD1DMA:1.0">
+    <MODULE COREREVISION="13" FULLNAME="/AD1_DMA" HWVERSION="1.0" INSTANCE="AD1_DMA" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AD1DMA" VLNV="spicerconsulting:IP:AD1DMA:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="AXI_LITE_SAMPLE" NAME="Reg0" RANGE="4096" USAGE=""/>
@@ -320,6 +320,8 @@
         <PARAMETER NAME="AD1_CLOCKS_BEFORE_DATA" VALUE="60"/>
         <PARAMETER NAME="AD1_CLOCKS_BETWEEN_TRANSACTIONS" VALUE="400"/>
         <PARAMETER NAME="AD1_CLOCKS_PER_BIT" VALUE="20"/>
+        <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="BUFFER_SIZE" VALUE="1024"/>
         <PARAMETER NAME="C_M_AXI_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_START_DATA_VALUE" VALUE="0xAA000000"/>
@@ -327,6 +329,7 @@
         <PARAMETER NAME="C_M_AXI_TRANSACTIONS_NUM" VALUE="4"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="4"/>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="INCLUDE_DEBUG_INTERFACE" VALUE="false"/>
         <PARAMETER NAME="Component_Name" VALUE="Fir_filter_PmodAD1_0_0"/>
         <PARAMETER NAME="PMOD" VALUE="ja"/>
@@ -522,7 +525,11 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axi_error" SIGIS="undef"/>
-        <PORT DIR="I" NAME="m_axi_init_axi_txn" SIGIS="undef"/>
+        <PORT DIR="I" NAME="m_axi_init_axi_txn" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="rst_ps7_0_50M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="m_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="AD1_DMA_m_axi_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S01_AXI_rdata"/>
@@ -6730,6 +6737,7 @@
             <CONNECTION INSTANCE="fir_dma" PORT="axi_resetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S01_ARESETN"/>
             <CONNECTION INSTANCE="AD1_DMA" PORT="s00_axi_aresetn"/>
+            <CONNECTION INSTANCE="AD1_DMA" PORT="m_axi_init_axi_txn"/>
             <CONNECTION INSTANCE="AD1_DMA" PORT="m_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
