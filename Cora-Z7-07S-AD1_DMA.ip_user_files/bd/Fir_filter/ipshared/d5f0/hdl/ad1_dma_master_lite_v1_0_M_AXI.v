@@ -256,25 +256,7 @@
 	//Write Address Channel
 	//--------------------
 
-	// The purpose of the write address channel is to request the address and 
-	// command information for the entire transaction.  It is a single beat
-	// of information.
 
-	// Note for this example the axi_awvalid/axi_wvalid are asserted at the same
-	// time, and then each is deasserted independent from each other.
-	// This is a lower-performance, but simplier control scheme.
-
-	// AXI VALID signals must be held active until accepted by the partner.
-
-	// A data transfer is accepted by the slave when a master has
-	// VALID data and the slave acknoledges it is also READY. While the master
-	// is allowed to generated multiple, back-to-back requests by not 
-	// deasserting VALID, this design will add rest cycle for
-	// simplicity.
-
-	// Since only one outstanding transaction is issued by the user design,
-	// there will not be a collision between a new request and an accepted
-	// request on the same clock cycle. 
 
 	           begin										      
 	             if (M_AXI_AWREADY && axi_awvalid)										      
@@ -319,9 +301,7 @@
 	//Write Data Channel
 	//--------------------
 
-	//The write data channel is for transfering the actual data.
-	//The data generation is speific to the example design, and 
-	//so only the WVALID/WREADY handshake is shown here
+
 
 	           begin										      
 	             if (M_AXI_WREADY && (write_index == C_M_TRANSACTIONS_NUM-1))										      
@@ -396,12 +376,6 @@
 	//--------------------------------
 	//Read Data (and Response) Channel
 	//--------------------------------
-
-	//The Read Data channel returns the results of the read request 
-	//The master will accept the read data by asserting axi_rready
-	//when there is a valid read data available.
-	//While not necessary per spec, it is advisable to reset READY signals in
-	//case of differing reset latencies between master/slave.
 
 	              begin                                                     
 	                if (axi_rready && M_AXI_RVALID && mst_exec_state != INIT_READ)                                                     
@@ -624,8 +598,17 @@
 
     always@(posedge M_AXI_ACLK)
     begin
-        if (drdy == 1)
-        begin
+    
+//     if (!M_AXI_ARESETN) begin
+//            buffer_index <= 0;
+//            buffer_full <= 0;
+//            start_dma <= 0;
+//            ready_for_data <= 1;
+            
+//            end
+    
+    
+        if (drdy == 1) begin
             
              // Store data in buffer
                 buffer[buffer_index] <= ad1_data;
@@ -639,6 +622,21 @@
                 end
             
             end
+            
+             // Handle DMA transfer
+//            if (start_dma) begin
+//                // DMA transfer logic here (e.g., send data to M_AXI interface)
+//                // After transfer completion, reset the buffer
+                 
+//                    buffer_index <= 0;
+//                    buffer_full <= 0;
+//                    start_dma <= 0;
+//                    ready_for_data <= 1;
+               
+//            end
+            
+            
+            
             
             
             end
