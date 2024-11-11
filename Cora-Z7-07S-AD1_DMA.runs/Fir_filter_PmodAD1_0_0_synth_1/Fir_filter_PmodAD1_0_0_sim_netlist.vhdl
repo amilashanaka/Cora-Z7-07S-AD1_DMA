@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
--- Date        : Mon Nov 11 10:44:50 2024
+-- Date        : Mon Nov 11 11:37:01 2024
 -- Host        : DonGun running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ Fir_filter_PmodAD1_0_0_sim_netlist.vhdl
@@ -1836,7 +1836,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ad1_dma_master_lite_v1_0_M_AXI 
     axi_arvalid_reg_0 : out STD_LOGIC;
     axi_rready_reg_0 : out STD_LOGIC;
     m_axi_error : out STD_LOGIC;
-    m_axi_txn_done : out STD_LOGIC;
     m_axi_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axi_awaddr : out STD_LOGIC_VECTOR ( 29 downto 0 );
     m_axi_araddr : out STD_LOGIC_VECTOR ( 29 downto 0 );
@@ -2118,7 +2117,6 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ad1_dma_mast
   signal axi_wvalid_i_1_n_0 : STD_LOGIC;
   signal \^axi_wvalid_reg_0\ : STD_LOGIC;
   signal compare_done : STD_LOGIC;
-  signal compare_done_i_1_n_0 : STD_LOGIC;
   signal \^error_reg\ : STD_LOGIC;
   signal error_reg_i_1_n_0 : STD_LOGIC;
   signal expected_rdata : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -2129,7 +2127,6 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ad1_dma_mast
   signal \^m_axi_araddr\ : STD_LOGIC_VECTOR ( 29 downto 0 );
   signal \^m_axi_awaddr\ : STD_LOGIC_VECTOR ( 29 downto 0 );
   signal \^m_axi_error\ : STD_LOGIC;
-  signal \^m_axi_txn_done\ : STD_LOGIC;
   signal \^m_axi_wdata\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal p_15_in : STD_LOGIC;
   signal \read_index[0]_i_1_n_0\ : STD_LOGIC;
@@ -2250,7 +2247,6 @@ begin
   m_axi_araddr(29 downto 0) <= \^m_axi_araddr\(29 downto 0);
   m_axi_awaddr(29 downto 0) <= \^m_axi_awaddr\(29 downto 0);
   m_axi_error <= \^m_axi_error\;
-  m_axi_txn_done <= \^m_axi_txn_done\;
   m_axi_wdata(31 downto 0) <= \^m_axi_wdata\(31 downto 0);
 ERROR_i_1: unisim.vcomponents.LUT1
     generic map(
@@ -4322,26 +4318,6 @@ axi_wvalid_reg: unisim.vcomponents.FDRE
       Q => \^axi_wvalid_reg_0\,
       R => \axi_awaddr[28]_i_1_n_0\
     );
-compare_done_i_1: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FBFFAAAA"
-    )
-        port map (
-      I0 => compare_done,
-      I1 => init_txn_ff,
-      I2 => init_txn_ff2,
-      I3 => \FSM_onehot_mst_exec_state_reg_n_0_[0]\,
-      I4 => \^m_axi_txn_done\,
-      O => compare_done_i_1_n_0
-    );
-compare_done_reg: unisim.vcomponents.FDRE
-     port map (
-      C => m_axi_aclk,
-      CE => '1',
-      D => compare_done_i_1_n_0,
-      Q => \^m_axi_txn_done\,
-      R => ERROR_i_1_n_0
-    );
 error_reg_i_1: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFFFFFF888"
@@ -4956,6 +4932,7 @@ begin
   m_axi_awprot(2) <= \<const0>\;
   m_axi_awprot(1) <= \<const0>\;
   m_axi_awprot(0) <= \<const0>\;
+  m_axi_txn_done <= \<const0>\;
   m_axi_wstrb(3) <= \<const0>\;
   m_axi_wstrb(2) <= \<const0>\;
   m_axi_wstrb(1) <= \<const0>\;
@@ -5008,7 +4985,6 @@ ad1_dma_master_lite_v1_0_M_AXI_inst: entity work.decalper_eb_ot_sdeen_pot_pi_deh
       m_axi_rdata(31 downto 0) => m_axi_rdata(31 downto 0),
       m_axi_rresp(0) => m_axi_rresp(1),
       m_axi_rvalid => m_axi_rvalid,
-      m_axi_txn_done => m_axi_txn_done,
       m_axi_wdata(31 downto 0) => m_axi_wdata(31 downto 0),
       m_axi_wready => m_axi_wready
     );
@@ -5120,6 +5096,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   signal NLW_inst_Pmod_out_pin8_t_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_Pmod_out_pin9_o_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_Pmod_out_pin9_t_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_m_axi_txn_done_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_led_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_m_axi_araddr_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_m_axi_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -5262,6 +5239,7 @@ begin
   m_axi_awprot(2) <= \<const0>\;
   m_axi_awprot(1) <= \<const0>\;
   m_axi_awprot(0) <= \<const0>\;
+  m_axi_txn_done <= \<const0>\;
   m_axi_wstrb(3) <= \<const1>\;
   m_axi_wstrb(2) <= \<const1>\;
   m_axi_wstrb(1) <= \<const1>\;
@@ -5328,7 +5306,7 @@ inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PmodAD1_v1_0
       m_axi_rresp(1) => m_axi_rresp(1),
       m_axi_rresp(0) => '0',
       m_axi_rvalid => m_axi_rvalid,
-      m_axi_txn_done => m_axi_txn_done,
+      m_axi_txn_done => NLW_inst_m_axi_txn_done_UNCONNECTED,
       m_axi_wdata(31 downto 0) => m_axi_wdata(31 downto 0),
       m_axi_wready => m_axi_wready,
       m_axi_wstrb(3 downto 0) => NLW_inst_m_axi_wstrb_UNCONNECTED(3 downto 0),

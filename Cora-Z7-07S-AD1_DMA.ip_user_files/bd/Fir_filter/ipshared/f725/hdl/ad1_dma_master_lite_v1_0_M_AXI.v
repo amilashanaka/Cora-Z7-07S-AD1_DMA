@@ -19,12 +19,12 @@
 	)
 	(
 	
-			// Users to add ports here
-        output wire ad1_cs,
-        input wire ad1_sdin0,
-        input wire ad1_sdin1,
-        output wire ad1_sclk,
-        output wire [1:0] led,
+	 // Users to add ports here
+     output wire ad1_cs,
+     input wire ad1_sdin0,
+     input wire ad1_sdin1,
+     output wire ad1_sclk,
+     output wire [1:0] led,
 	
 	 // Control signals
 	 input wire  INIT_AXI_TXN,
@@ -70,6 +70,19 @@
 
 		
 	);
+	
+	// Internal buffer to store ADC samples
+    reg [C_M_AXI_DATA_WIDTH-1:0] buffer[0:BUFFER_SIZE-1];
+    reg [$clog2(BUFFER_SIZE):0] buffer_index = 0;  // Index for storing data
+
+    // State variables
+    reg buffer_full = 0;
+    reg start_dma = 0;
+    reg [C_M_AXI_ADDR_WIDTH-1:0] current_dma_address = 0;
+
+    // DMA transfer complete signal
+    assign TXN_DONE = (buffer_full && !start_dma);
+    
 
 	// function called clogb2 that returns an integer which has the
 	// value of the ceiling of the log base 2

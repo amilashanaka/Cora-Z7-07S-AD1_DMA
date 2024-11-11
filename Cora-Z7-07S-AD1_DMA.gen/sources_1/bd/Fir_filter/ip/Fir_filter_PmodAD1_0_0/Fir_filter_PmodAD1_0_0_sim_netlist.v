@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-// Date        : Mon Nov 11 10:44:50 2024
+// Date        : Mon Nov 11 11:37:01 2024
 // Host        : DonGun running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/Fir_filter_PmodAD1_0_0_sim_netlist.v
@@ -174,7 +174,6 @@ module Fir_filter_PmodAD1_0_0
   wire m_axi_rready;
   wire [1:0]m_axi_rresp;
   wire m_axi_rvalid;
-  wire m_axi_txn_done;
   wire [31:0]m_axi_wdata;
   wire m_axi_wready;
   wire m_axi_wvalid;
@@ -211,6 +210,7 @@ module Fir_filter_PmodAD1_0_0
   wire NLW_inst_Pmod_out_pin8_t_UNCONNECTED;
   wire NLW_inst_Pmod_out_pin9_o_UNCONNECTED;
   wire NLW_inst_Pmod_out_pin9_t_UNCONNECTED;
+  wire NLW_inst_m_axi_txn_done_UNCONNECTED;
   wire [1:0]NLW_inst_led_UNCONNECTED;
   wire [1:0]NLW_inst_m_axi_araddr_UNCONNECTED;
   wire [2:0]NLW_inst_m_axi_arprot_UNCONNECTED;
@@ -248,6 +248,7 @@ module Fir_filter_PmodAD1_0_0
   assign m_axi_awprot[2] = \<const0> ;
   assign m_axi_awprot[1] = \<const0> ;
   assign m_axi_awprot[0] = \<const0> ;
+  assign m_axi_txn_done = \<const0> ;
   assign m_axi_wstrb[3] = \<const1> ;
   assign m_axi_wstrb[2] = \<const1> ;
   assign m_axi_wstrb[1] = \<const1> ;
@@ -320,7 +321,7 @@ module Fir_filter_PmodAD1_0_0
         .m_axi_rready(m_axi_rready),
         .m_axi_rresp({m_axi_rresp[1],1'b0}),
         .m_axi_rvalid(m_axi_rvalid),
-        .m_axi_txn_done(m_axi_txn_done),
+        .m_axi_txn_done(NLW_inst_m_axi_txn_done_UNCONNECTED),
         .m_axi_wdata(m_axi_wdata),
         .m_axi_wready(m_axi_wready),
         .m_axi_wstrb(NLW_inst_m_axi_wstrb_UNCONNECTED[3:0]),
@@ -514,7 +515,6 @@ module Fir_filter_PmodAD1_0_0_PmodAD1_v1_0
   wire m_axi_rready;
   wire [1:0]m_axi_rresp;
   wire m_axi_rvalid;
-  wire m_axi_txn_done;
   wire [31:0]m_axi_wdata;
   wire m_axi_wready;
   wire m_axi_wvalid;
@@ -566,6 +566,7 @@ module Fir_filter_PmodAD1_0_0_PmodAD1_v1_0
   assign m_axi_awprot[2] = \<const0> ;
   assign m_axi_awprot[1] = \<const0> ;
   assign m_axi_awprot[0] = \<const0> ;
+  assign m_axi_txn_done = \<const0> ;
   assign m_axi_wstrb[3] = \<const0> ;
   assign m_axi_wstrb[2] = \<const0> ;
   assign m_axi_wstrb[1] = \<const0> ;
@@ -613,7 +614,6 @@ module Fir_filter_PmodAD1_0_0_PmodAD1_v1_0
         .m_axi_rdata(m_axi_rdata),
         .m_axi_rresp(m_axi_rresp[1]),
         .m_axi_rvalid(m_axi_rvalid),
-        .m_axi_txn_done(m_axi_txn_done),
         .m_axi_wdata(m_axi_wdata),
         .m_axi_wready(m_axi_wready));
 endmodule
@@ -2014,7 +2014,6 @@ module Fir_filter_PmodAD1_0_0_ad1_dma_master_lite_v1_0_M_AXI
     axi_arvalid_reg_0,
     axi_rready_reg_0,
     m_axi_error,
-    m_axi_txn_done,
     m_axi_wdata,
     m_axi_awaddr,
     m_axi_araddr,
@@ -2035,7 +2034,6 @@ module Fir_filter_PmodAD1_0_0_ad1_dma_master_lite_v1_0_M_AXI
   output axi_arvalid_reg_0;
   output axi_rready_reg_0;
   output m_axi_error;
-  output m_axi_txn_done;
   output [31:0]m_axi_wdata;
   output [29:0]m_axi_awaddr;
   output [29:0]m_axi_araddr;
@@ -2314,7 +2312,6 @@ module Fir_filter_PmodAD1_0_0_ad1_dma_master_lite_v1_0_M_AXI
   wire axi_wvalid_i_1_n_0;
   wire axi_wvalid_reg_0;
   wire compare_done;
-  wire compare_done_i_1_n_0;
   wire error_reg;
   wire error_reg_i_1_n_0;
   wire [3:0]expected_rdata;
@@ -2335,7 +2332,6 @@ module Fir_filter_PmodAD1_0_0_ad1_dma_master_lite_v1_0_M_AXI
   wire [31:0]m_axi_rdata;
   wire [0:0]m_axi_rresp;
   wire m_axi_rvalid;
-  wire m_axi_txn_done;
   wire [31:0]m_axi_wdata;
   wire m_axi_wready;
   wire p_15_in;
@@ -3850,21 +3846,6 @@ module Fir_filter_PmodAD1_0_0_ad1_dma_master_lite_v1_0_M_AXI
         .D(axi_wvalid_i_1_n_0),
         .Q(axi_wvalid_reg_0),
         .R(\axi_awaddr[28]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFBFFAAAA)) 
-    compare_done_i_1
-       (.I0(compare_done),
-        .I1(init_txn_ff),
-        .I2(init_txn_ff2),
-        .I3(\FSM_onehot_mst_exec_state_reg_n_0_[0] ),
-        .I4(m_axi_txn_done),
-        .O(compare_done_i_1_n_0));
-  FDRE compare_done_reg
-       (.C(m_axi_aclk),
-        .CE(1'b1),
-        .D(compare_done_i_1_n_0),
-        .Q(m_axi_txn_done),
-        .R(ERROR_i_1_n_0));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFF888)) 
     error_reg_i_1
