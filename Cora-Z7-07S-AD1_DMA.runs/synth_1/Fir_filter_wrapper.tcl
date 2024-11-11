@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1
 
@@ -83,18 +84,10 @@ read_verilog -library xil_defaultlib C:/Projects/ERN24004/Projects/Cora-Z7-07S-A
 add_files C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_processing_system7_0_0/Fir_filter_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_xbar_1/Fir_filter_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_pc_0/Fir_filter_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_rst_ps7_0_50M_0/Fir_filter_rst_ps7_0_50M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_rst_ps7_0_50M_0/Fir_filter_rst_ps7_0_50M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_rst_ps7_0_50M_0/Fir_filter_rst_ps7_0_50M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_xbar_0/Fir_filter_xbar_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_0/Fir_filter_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_0/Fir_filter_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_0/Fir_filter_auto_us_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_1/Fir_filter_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_1/Fir_filter_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_1/Fir_filter_auto_us_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_pc_1/Fir_filter_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/pmod_bridge_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/src/pmod_bridge_0/src/pmod_concat_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0/Fir_filter_PmodAD1_0_0_board.xdc]
@@ -103,6 +96,14 @@ set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/P
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_axi_dma_0_0/Fir_filter_axi_dma_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_axi_dma_0_0/Fir_filter_axi_dma_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_axi_dma_0_0/Fir_filter_axi_dma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_pc_0/Fir_filter_auto_pc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_0/Fir_filter_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_0/Fir_filter_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_0/Fir_filter_auto_us_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_1/Fir_filter_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_1/Fir_filter_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_us_1/Fir_filter_auto_us_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_auto_pc_1/Fir_filter_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/Fir_filter_ooc.xdc]
 
 OPTRACE "Adding files" END { }

@@ -626,7 +626,17 @@
     begin
         if (drdy == 1)
         begin
-            ad1_data_r <= ad1_data;
+            
+             // Store data in buffer
+                buffer[buffer_index] <= ad1_data;
+                buffer_index <= buffer_index + 1;
+                
+                // Check if buffer is full
+                if (buffer_index == (BUFFER_SIZE - 1)) begin
+                    buffer_full <= 1;
+                    ready_for_data <= 0;
+                    start_dma <= 1;  // Initiate DMA transfer
+                end
             
             end
             
