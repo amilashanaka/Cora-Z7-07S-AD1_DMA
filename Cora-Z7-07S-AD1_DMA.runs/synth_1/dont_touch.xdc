@@ -12,6 +12,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_
 # IP: bd/Fir_filter/ip/Fir_filter_xbar_1/Fir_filter_xbar_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_xbar_1 || ORIG_REF_NAME==Fir_filter_xbar_1} -quiet] -quiet
 
+# IP: bd/Fir_filter/ip/Fir_filter_auto_pc_0/Fir_filter_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_auto_pc_0 || ORIG_REF_NAME==Fir_filter_auto_pc_0} -quiet] -quiet
+
 # IP: bd/Fir_filter/ip/Fir_filter_ps7_0_axi_periph_0/Fir_filter_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_ps7_0_axi_periph_0 || ORIG_REF_NAME==Fir_filter_ps7_0_axi_periph_0} -quiet] -quiet
 
@@ -20,6 +23,15 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_
 
 # IP: bd/Fir_filter/ip/Fir_filter_xbar_0/Fir_filter_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_xbar_0 || ORIG_REF_NAME==Fir_filter_xbar_0} -quiet] -quiet
+
+# IP: bd/Fir_filter/ip/Fir_filter_auto_us_0/Fir_filter_auto_us_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_auto_us_0 || ORIG_REF_NAME==Fir_filter_auto_us_0} -quiet] -quiet
+
+# IP: bd/Fir_filter/ip/Fir_filter_auto_us_1/Fir_filter_auto_us_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_auto_us_1 || ORIG_REF_NAME==Fir_filter_auto_us_1} -quiet] -quiet
+
+# IP: bd/Fir_filter/ip/Fir_filter_auto_pc_1/Fir_filter_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_auto_pc_1 || ORIG_REF_NAME==Fir_filter_auto_pc_1} -quiet] -quiet
 
 # IP: bd/Fir_filter/ip/Fir_filter_axi_mem_intercon_0/Fir_filter_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_axi_mem_intercon_0 || ORIG_REF_NAME==Fir_filter_axi_mem_intercon_0} -quiet] -quiet
@@ -32,17 +44,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_
 
 # IP: bd/Fir_filter/ip/Fir_filter_axi_dma_0_0/Fir_filter_axi_dma_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_axi_dma_0_0 || ORIG_REF_NAME==Fir_filter_axi_dma_0_0} -quiet] -quiet
-
-# IP: bd/Fir_filter/ip/Fir_filter_auto_pc_0/Fir_filter_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_auto_pc_0 || ORIG_REF_NAME==Fir_filter_auto_pc_0} -quiet] -quiet
-
-# IP: bd/Fir_filter/ip/Fir_filter_auto_us_0/Fir_filter_auto_us_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_auto_us_0 || ORIG_REF_NAME==Fir_filter_auto_us_0} -quiet] -quiet
-
-# IP: bd/Fir_filter/ip/Fir_filter_auto_us_1/Fir_filter_auto_us_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_auto_us_1 || ORIG_REF_NAME==Fir_filter_auto_us_1} -quiet] -quiet
-
-# IP: bd/Fir_filter/ip/Fir_filter_auto_pc_1/Fir_filter_auto_pc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Fir_filter_auto_pc_1 || ORIG_REF_NAME==Fir_filter_auto_pc_1} -quiet] -quiet
 
 # XDC: c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/Fir_filter_ooc.xdc
