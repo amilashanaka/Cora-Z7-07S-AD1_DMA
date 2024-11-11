@@ -3,6 +3,12 @@
 
 	module ad1_dma_master_lite_v1_0_M_AXI #
 	(
+	    parameter INCLUDE_DEBUG_INTERFACE = 0,
+        parameter AD1_CLOCKS_PER_BIT = 20,//1 bit per 200ns
+        parameter AD1_CLOCKS_BEFORE_DATA = 60,//600ns
+        parameter AD1_CLOCKS_AFTER_DATA = 500,//5us
+        parameter AD1_CLOCKS_BETWEEN_TRANSACTIONS = 400,//4us
+        
 	    // Parameters for AXI and buffer configurations
         parameter C_M_START_DATA_VALUE = 32'hAA000000,
         parameter C_M_TARGET_SLAVE_BASE_ADDR = 32'h40000000,
@@ -12,6 +18,13 @@
         parameter BUFFER_SIZE = 1024  // Buffer size in samples
 	)
 	(
+	
+			// Users to add ports here
+        output wire ad1_cs,
+        input wire ad1_sdin0,
+        input wire ad1_sdin1,
+        output wire ad1_sclk,
+        output wire [1:0] led,
 	
 	 // Control signals
 	 input wire  INIT_AXI_TXN,
@@ -150,6 +163,8 @@
 	reg  	init_txn_ff2;
 	reg  	init_txn_edge;
 	wire  	init_txn_pulse;
+    wire [31:0] ad1_data;
+    reg [31:0] ad1_data_r;
 
 
 	// I/O Connections assignments
@@ -571,6 +586,33 @@
 	      error_reg <= error_reg;                                                       
 	  end                                                                               
 	// Add user logic here
+	
+	
+    wire drdy;
+
+    ad1_spi #(
+        .INCLUDE_DEBUG_INTERFACE(INCLUDE_DEBUG_INTERFACE),
+        .CLOCKS_PER_BIT(AD1_CLOCKS_PER_BIT),
+        .CLOCKS_BEFORE_DATA(AD1_CLOCKS_BEFORE_DATA),
+        .CLOCKS_AFTER_DATA(AD1_CLOCKS_AFTER_DATA),
+        .CLOCKS_BETWEEN_TRANSACTIONS(AD1_CLOCKS_BETWEEN_TRANSACTIONS)
+    ) m_ad1_spi (
+        .clk(M_AXI_ACLK),
+        .rst(~M_AXI_ARESETN),
+        .cs(ad1_cs),
+        .sdin0(ad1_sdin0),
+        .sdin1(ad1_sdin1),
+        .sclk(ad1_sclk),
+        .drdy(drdy),
+        .dout0(ad1_data[15:00]),
+        .dout1(ad1_data[31:16]),
+        .led(led)
+    );
+
+    always@(posedge M_AXI_ACLK)
+        if (drdy == 1)
+            ad1_data_r <= ad1_data;
+
 
 	// User logic ends
 

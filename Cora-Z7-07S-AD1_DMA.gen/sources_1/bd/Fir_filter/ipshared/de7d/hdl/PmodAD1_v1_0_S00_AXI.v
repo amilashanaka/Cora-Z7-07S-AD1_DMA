@@ -405,28 +405,28 @@
 
     wire drdy;
 
-    ad1_spi #(
-        .INCLUDE_DEBUG_INTERFACE(INCLUDE_DEBUG_INTERFACE),
-        .CLOCKS_PER_BIT(AD1_CLOCKS_PER_BIT),
-        .CLOCKS_BEFORE_DATA(AD1_CLOCKS_BEFORE_DATA),
-        .CLOCKS_AFTER_DATA(AD1_CLOCKS_AFTER_DATA),
-        .CLOCKS_BETWEEN_TRANSACTIONS(AD1_CLOCKS_BETWEEN_TRANSACTIONS)
-    ) m_ad1_spi (
-        .clk(S_AXI_ACLK),
-        .rst(~S_AXI_ARESETN),
-        .cs(ad1_cs),
-        .sdin0(ad1_sdin0),
-        .sdin1(ad1_sdin1),
-        .sclk(ad1_sclk),
-        .drdy(drdy),
-        .dout0(ad1_data[15:00]),
-        .dout1(ad1_data[31:16]),
-        .led(led)
-    );
+//    ad1_spi #(
+//        .INCLUDE_DEBUG_INTERFACE(INCLUDE_DEBUG_INTERFACE),
+//        .CLOCKS_PER_BIT(AD1_CLOCKS_PER_BIT),
+//        .CLOCKS_BEFORE_DATA(AD1_CLOCKS_BEFORE_DATA),
+//        .CLOCKS_AFTER_DATA(AD1_CLOCKS_AFTER_DATA),
+//        .CLOCKS_BETWEEN_TRANSACTIONS(AD1_CLOCKS_BETWEEN_TRANSACTIONS)
+//    ) m_ad1_spi (
+//        .clk(S_AXI_ACLK),
+//        .rst(~S_AXI_ARESETN),
+//        .cs(ad1_cs),
+//        .sdin0(ad1_sdin0),
+//        .sdin1(ad1_sdin1),
+//        .sclk(ad1_sclk),
+//        .drdy(drdy),
+//        .dout0(ad1_data[15:00]),
+//        .dout1(ad1_data[31:16]),
+//        .led(led)
+//    );
 
-    always@(posedge S_AXI_ACLK)
-        if (drdy == 1)
-            ad1_data_r <= ad1_data;
+//    always@(posedge S_AXI_ACLK)
+//        if (drdy == 1)
+//            ad1_data_r <= ad1_data;
 
 	// User logic ends
 

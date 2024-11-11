@@ -8,13 +8,17 @@ module PmodAD1_v1_0 #
     parameter AD1_CLOCKS_BEFORE_DATA = 60,
     parameter AD1_CLOCKS_AFTER_DATA = 500,
     parameter AD1_CLOCKS_BETWEEN_TRANSACTIONS = 400,
+    
     parameter integer C_S00_AXI_DATA_WIDTH = 32,
     parameter integer C_S00_AXI_ADDR_WIDTH = 4,
+    
     parameter C_M_AXI_START_DATA_VALUE = 32'hAA000000,
     parameter C_M_AXI_TARGET_SLAVE_BASE_ADDR = 32'h40000000,
+    
     parameter integer C_M_AXI_ADDR_WIDTH = 32,
     parameter integer C_M_AXI_DATA_WIDTH = 32,
     parameter integer C_M_AXI_TRANSACTIONS_NUM = 4,
+    
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 32,
     parameter BUFFER_SIZE = 1024 // Buffer size in samples
@@ -193,7 +197,7 @@ ad1_dma_master_lite_v1_0_M_AXI # (
     .M_AXI_RREADY(m_axi_rready),
 
     // ADC Data Input and Flow Control
-    .adc_data(adc_data),               // Input: ADC data
+    .adc_data(packed_data),             // Input: ADC data get from packet data
     .adc_data_valid(adc_data_valid),   // Input: ADC data valid signal
     .ready_for_data(ready_for_data)    // Output: Ready for new ADC data
 );

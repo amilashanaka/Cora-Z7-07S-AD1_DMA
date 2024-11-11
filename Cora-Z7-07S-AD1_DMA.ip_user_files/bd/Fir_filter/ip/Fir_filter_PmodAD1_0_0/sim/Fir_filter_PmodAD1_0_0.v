@@ -48,7 +48,7 @@
 
 
 // IP VLNV: spicerconsulting:IP:AD1DMA:1.0
-// IP Revision: 21
+// IP Revision: 26
 
 `timescale 1ns/1ps
 
