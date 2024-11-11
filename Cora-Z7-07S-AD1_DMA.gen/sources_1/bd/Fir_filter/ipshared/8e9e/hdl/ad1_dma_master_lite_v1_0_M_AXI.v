@@ -623,8 +623,15 @@
     );
 
     always@(posedge M_AXI_ACLK)
+    begin
         if (drdy == 1)
+        begin
             ad1_data_r <= ad1_data;
+            
+            end
+            
+            
+            end
 
 
 	// User logic ends

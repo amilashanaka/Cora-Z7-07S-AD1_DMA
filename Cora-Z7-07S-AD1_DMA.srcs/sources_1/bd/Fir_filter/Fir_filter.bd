@@ -2455,7 +2455,7 @@
       },
       "AD1_DMA": {
         "vlnv": "spicerconsulting:IP:AD1DMA:1.0",
-        "ip_revision": "27",
+        "ip_revision": "28",
         "xci_name": "Fir_filter_PmodAD1_0_0",
         "xci_path": "ip\\Fir_filter_PmodAD1_0_0\\Fir_filter_PmodAD1_0_0.xci",
         "inst_hier_path": "AD1_DMA",

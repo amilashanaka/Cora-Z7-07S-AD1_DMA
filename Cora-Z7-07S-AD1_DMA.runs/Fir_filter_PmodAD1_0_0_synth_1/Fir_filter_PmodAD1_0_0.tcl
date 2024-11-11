@@ -57,7 +57,6 @@ if {$::dispatch::connected} {
 
 OPTRACE "Fir_filter_PmodAD1_0_0_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
-set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1

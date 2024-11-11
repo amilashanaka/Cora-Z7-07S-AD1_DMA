@@ -4,7 +4,7 @@
     "xci_name": "Fir_filter_PmodAD1_0_0",
     "cell_name": "AD1_DMA",
     "component_reference": "spicerconsulting:IP:AD1DMA:1.0",
-    "ip_revision": "27",
+    "ip_revision": "28",
     "gen_directory": "../../../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0",
     "parameters": {
       "component_parameters": {
@@ -62,7 +62,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "27" } ],
+        "IPREVISION": [ { "value": "28" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../Cora-Z7-07S-AD1_DMA.gen/sources_1/bd/Fir_filter/ip/Fir_filter_PmodAD1_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
