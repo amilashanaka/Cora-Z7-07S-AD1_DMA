@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov 11 16:10:13 2024" VIVADOVERSION="2024.1.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov 11 16:22:27 2024" VIVADOVERSION="2024.1.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:cora-z7-07s:part0:1.1" DEVICE="7z007s" NAME="Fir_filter" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -307,7 +307,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="33" FULLNAME="/AD1_DMA" HWVERSION="1.0" INSTANCE="AD1_DMA" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AD1DMA" VLNV="spicerconsulting:IP:AD1DMA:1.0">
+    <MODULE COREREVISION="35" FULLNAME="/AD1_DMA" HWVERSION="1.0" INSTANCE="AD1_DMA" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AD1DMA" VLNV="spicerconsulting:IP:AD1DMA:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="AXI_LITE_SAMPLE" NAME="Reg0" RANGE="4096" USAGE=""/>
@@ -525,7 +525,7 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axi_error" SIGIS="undef"/>
-        <PORT DIR="I" NAME="m_axi_init_axi_txn" SIGIS="undef" SIGNAME="rst_ps7_0_50M_peripheral_aresetn">
+        <PORT DIR="I" NAME="m_axi_init_axi_txn" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="rst_ps7_0_50M_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>

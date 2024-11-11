@@ -599,13 +599,13 @@
     always@(posedge M_AXI_ACLK)
     begin
     
-//     if (!M_AXI_ARESETN) begin
-//            buffer_index <= 0;
-//            buffer_full <= 0;
-//            start_dma <= 0;
-//            ready_for_data <= 1;
+     if (!M_AXI_ARESETN) begin
+            buffer_index <= 0;
+            buffer_full <= 0;
+            start_dma <= 0;
+            ready_for_data <= 1;
             
-//            end
+            end
     
     
         if (drdy == 1) begin
@@ -622,23 +622,7 @@
                 end
             
             end
-            
-             // Handle DMA transfer
-//            if (start_dma) begin
-//                // DMA transfer logic here (e.g., send data to M_AXI interface)
-//                // After transfer completion, reset the buffer
-                 
-//                    buffer_index <= 0;
-//                    buffer_full <= 0;
-//                    start_dma <= 0;
-//                    ready_for_data <= 1;
-               
-//            end
-            
-            
-            
-            
-            
+ 
             end
 
 
