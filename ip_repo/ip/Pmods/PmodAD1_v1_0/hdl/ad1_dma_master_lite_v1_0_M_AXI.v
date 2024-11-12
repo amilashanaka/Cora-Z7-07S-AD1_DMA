@@ -313,9 +313,9 @@
 	                 write_index <= 0;										      
 	                 state_write <= IDLE;										      
 	               end										      
-	             else if (axi_wvalid && M_AXI_WREADY)										      
+	             else if (axi_wvalid && M_AXI_WREADY  && buffer_full)										      
 	               begin										      
-	                 axi_wdata <= axi_wdata + 1;										      
+	                 axi_wdata <= buffer[write_index];										      
 	                 axi_wvalid <= 1;										      
 	                 axi_awvalid <= 1;										      
 	                 write_index <= write_index + 1;										      
