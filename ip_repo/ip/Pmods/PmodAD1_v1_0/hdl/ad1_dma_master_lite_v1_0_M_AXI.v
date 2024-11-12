@@ -618,6 +618,7 @@
                 if (buffer_index == (BUFFER_SIZE - 1)) begin
                     buffer_full <= 1;
                     ready_for_data <= 0;
+                    buffer_index <=0;
                     start_dma <= 1;  // Initiate DMA transfer
                 end
             

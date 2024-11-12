@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Mon Nov 11 14:42:22 2024
+# Process ID: 17576
+# Current directory: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42572 C:\Projects\ERN24004\Projects\Cora-Z7-07S-AD1_DMA\Cora-Z7-07S-AD1_DMA.xpr
+# Log file: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/vivado.log
+# Journal file: C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA\vivado.jou
+# Running On        :DonGun
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency     :3418 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36272 MB
+# Available Virtual :13408 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_bd_design {C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd}
+ipx::edit_ip_in_project -upgrade true -name AD1DMA_v1_0_project -directory C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.tmp/AD1DMA_v1_0_project c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 29 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv spicerconsulting:IP:AD1DMA:1.0 [get_ips  Fir_filter_PmodAD1_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Fir_filter_PmodAD1_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd]
+catch { config_ip_cache -export [get_ips -all Fir_filter_PmodAD1_0_0] }
+catch { config_ip_cache -export [get_ips -all Fir_filter_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all Fir_filter_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all Fir_filter_auto_us_1] }
+catch { config_ip_cache -export [get_ips -all Fir_filter_auto_pc_1] }
+export_ip_user_files -of_objects [get_files C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd]
+launch_runs Fir_filter_PmodAD1_0_0_synth_1 -jobs 4
+wait_on_run Fir_filter_PmodAD1_0_0_synth_1
+export_simulation -of_objects [get_files C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd] -directory C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.ip_user_files -ipstatic_source_dir C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.cache/compile_simlib/modelsim} {questa=C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.cache/compile_simlib/questa} {riviera=C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.cache/compile_simlib/riviera} {activehdl=C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name AD1DMA_v1_0_project -directory C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.tmp/AD1DMA_v1_0_project c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 30 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv spicerconsulting:IP:AD1DMA:1.0 [get_ips  Fir_filter_PmodAD1_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Fir_filter_PmodAD1_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Projects/ERN24004/Projects/Cora-Z7-07S-AD1_DMA/Cora-Z7-07S-AD1_DMA.srcs/sources_1/bd/Fir_filter/Fir_filter.bd]

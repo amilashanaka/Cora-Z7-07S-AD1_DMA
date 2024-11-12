@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-| Date         : Mon Nov 11 16:30:51 2024
+| Date         : Tue Nov 12 08:25:31 2024
 | Host         : DonGun running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Fir_filter_wrapper_utilization_placed.rpt -pb Fir_filter_wrapper_utilization_placed.pb
 | Design       : Fir_filter_wrapper
